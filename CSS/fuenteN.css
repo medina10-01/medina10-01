@@ -1,0 +1,11 @@
+body{
+background-color: rgb(228, 19, 134);
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+h1{font-family: 'Bebas Neue', cursive;
+
+
+}
