@@ -1,4 +1,6 @@
 body{
+    background-color: rgb(156, 189, 211);
+display: flex;
     display: flex;
     justify-content: center;
 align-items: center;
@@ -9,6 +11,8 @@ height: 100vh;
 
 
 h1 {
+    background-color: rgb(255, 0, 0);
+display: flex;
     font-size: 8em;
     font-family: 'Cinzel', sans-serif;
     font-weight: 600;

@@ -1,4 +1,6 @@
 body{
+    background-color: rgb(2, 2, 253);
+display: flex;
     display: flex;
     justify-content: center;
 align-items: center;
@@ -8,6 +10,7 @@ height: 100vh;
 
 
 h1 {
+    color: aliceblue;
     font-size: 8em;
     font-family: 'Calistoga'; box-sizing: border-box;
     font-weight: 800;
