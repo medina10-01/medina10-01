@@ -11,13 +11,13 @@ height: 100vh;
 h1 {
     color: aliceblue;
     font-size: 10em;
-    font-family: 'Calistoga'; box-sizing: border-box;
+    font-family: 'waltograph'; box-sizing: border-box;
     font-weight: 600;
 }
 
 @font-face {
     font-family: 'waltograph';
-    src: url(../fonts/waltographUI.ttf);
+    src: url(../fonts/Walter.ttf);
 }
 
 
