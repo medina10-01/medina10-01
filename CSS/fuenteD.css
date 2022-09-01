@@ -1,6 +1,5 @@
 body{
-    background-color: rgb(2, 2, 253);
-display: flex;
+    background-color: rgb(19, 2, 253);
     display: flex;
     justify-content: center;
 align-items: center;
@@ -11,46 +10,14 @@ height: 100vh;
 
 h1 {
     color: aliceblue;
-    font-size: 8em;
+    font-size: 10em;
     font-family: 'Calistoga'; box-sizing: border-box;
-    font-weight: 800;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'waltograph';
+    src: url(../fonts/waltographUI.ttf);
 }
 
 
-
-
-
-/* calligraffitti-regular - latin */
-@font-face {
-    font-family: 'Calligraffitti';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/calligraffitti-v19-latin-regular.eot'); /* IE9 Compat Modes */
-    src: local(''),
-         url('../fonts/calligraffitti-v19-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/calligraffitti-v19-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/calligraffitti-v19-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/calligraffitti-v19-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/calligraffitti-v19-latin-regular.svg#Calligraffitti') format('svg'); /* Legacy iOS */
-  }
-  @font-face {
-    font-family: 'Calistoga';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/calistoga-v10-latin-regular.eot'); /* IE9 Compat Modes */
-    src: local(''),
-         url('../fonts/calistoga-v10-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/calistoga-v10-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/calistoga-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/calistoga-v10-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/calistoga-v10-latin-regular.svg#Calistoga') format('svg'); /* Legacy iOS */
-  }
-  @font-face {
-    font-family: 'waltograph';
-    font-style: normal;
-    font-weight: 400;
-    src:local(''),
-        url('../fonts/waltographUI.ttf') format('truetipe'), /* safari, android, ios */
-        url('../fonts/waltograph42.otf')format('svg'), /* legacy ios */
-
-  }
