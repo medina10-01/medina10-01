@@ -1,0 +1,26 @@
+.letter-style{
+    font-size: 2em;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.name-style{
+    color: rgba(146, 104, 104, 0.8) 
+
+}
+/* ejemplo de clases de elemento  */
+h2{
+    color:red;
+
+}
+/* ejemplo de clase atada */
+h2.name-style{
+    color:blue;
+    /* no atada */
+}
+.text-style{
+    color: rgb(40, 141, 141);
+}
+/* ejemplo de clase utilizando id */
+#textStyle {
+    color: violet;
+}
