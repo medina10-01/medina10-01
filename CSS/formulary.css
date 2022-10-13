@@ -17,6 +17,7 @@ textarea{
 }
 .ti{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 5%;
 }
 input[type="text"]{
     padding: 7px;
@@ -32,4 +33,14 @@ input[type="text"]:hover{
 }
 input[type="text"]:focus{
     outline:none
+}
+form{
+    margin: 3px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+fieldset{
+    width: 500px;
 }
