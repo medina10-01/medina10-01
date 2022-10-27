@@ -23,17 +23,19 @@ h1{
     font-size: 30px;
     font-family: sans-serif;
     color: aliceblue;
+    box-shadow: 10px 5px 8px 4px black;
 }
-.fixed{
+.fixed, .style{
     width: 250px;
     height: 250px;
     color: aliceblue;
     border-radius: 20px;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     font-size: 30px;
     font-family: sans-serif;
+    box-shadow: 20px 10px 5px 3px rgb(0, 0, 0);
 
 }
 .c-1{
@@ -62,19 +64,42 @@ h1{
 
 }
 .fix{
-    width: 50px;
-    height: 250px;
+    width: 60px;
+    height: 60px;
+    font-size: 50px;
     color: aliceblue;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
-    background-color: rgb(43, 65, 31);
+    background-color: rgb(3, 3, 3);
 
 }
 .box1{
     position: fixed;
     right: 0px;
     top: 40%;
+}
+.box2{
+    position: fixed;
+    right: 0px;
+    top: 47%;
+}
+.box-1-abs{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(40, 33, 102);
+    color: aliceblue;
+   justify-content: right;
+   margin: 0px 0px 10px 0px;
+}
+.abs{
+    margin: 3%;
+}
+li{
+    list-style: none;
 }
