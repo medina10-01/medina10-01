@@ -9,19 +9,29 @@ nav{
     left: 0;
     width: 300px;
     height: 100vh;
+    border-right: 1px solid rgb(197, 206, 206);
 }
 ul{
     list-style: none;
 }
-a{
-    text-decoration: none;
-}
+
 hr{
-    width: 250px;
-    margin: 0 0 0 1px;
+    width: 280px;
+    margin: 0 10px;
 }
 
 .icon-style {
     margin: 10px;
     font-size: 15px;
+}
+.icon-style:hover{
+    background-color: rgb(197, 206, 206);
+    cursor: pointer;
+    letter-spacing: 3px;
+}
+.menu{
+    margin: 50px 0px 100px 20px;
+}
+.li{
+    margin: 10px 10px -2px 10px;
 }

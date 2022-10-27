@@ -1,0 +1,80 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+h1{
+    text-align: center;
+}
+.main-box{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.box{
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    position: static;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: aliceblue;
+}
+.fixed{
+    width: 250px;
+    height: 250px;
+    color: aliceblue;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: sans-serif;
+
+}
+.c-1{
+    background-color: rgb(15, 107, 50);
+}
+.c-2{
+    background-color: rgb(24, 24, 163);
+}
+.c-3{
+    background-color: rgb(33, 44, 34);
+}
+.c-4{
+    background-color: rgb(77, 14, 14);
+}
+.box-1{
+    background-color: rgb(26, 19, 32);
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+}
+.box-2{
+    background-color: rgb(41, 22, 22);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+}
+.fix{
+    width: 50px;
+    height: 250px;
+    color: aliceblue;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: rgb(43, 65, 31);
+
+}
+.box1{
+    position: fixed;
+    right: 0px;
+    top: 40%;
+}
