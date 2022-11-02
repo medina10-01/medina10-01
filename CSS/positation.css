@@ -14,7 +14,7 @@ h1{
 .box{
     width: 250px;
     height: 250px;
-    margin: 20px;
+    margin: 100px ;
     position: static;
     border-radius: 20px;
     display: flex;
