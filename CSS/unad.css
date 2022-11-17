@@ -4,7 +4,7 @@
 }
 nav{
     font-size: 10px;
-    /* background-image: 100%; */
+   background-color: aliceblue;
 }
 li{
     margin-left: 15px;
@@ -14,7 +14,7 @@ nav a{
     text-decoration: none;
     list-style: none;
     color: aliceblue;
-    padding: 0.3em;
+    padding: 2em;
 }
 nav ul{
     list-style: none;
@@ -27,7 +27,7 @@ nav ul{
 nav > ul > li{
     float: left;
     /* width: 100px; */
-    line-height: 40px;
+    line-height: 20px;
 }
 nav li {
     position: relative;
