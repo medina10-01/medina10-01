@@ -3,61 +3,79 @@
     border: 0%;
     box-sizing: border-box;
 }
-nav{
-    width: 100%;
-    background-color: rgb(49, 48, 48);
-    height: 50px;
-    margin-bottom: 220px;
-}
 .bar-menu{
     color: aliceblue;
     font-size: 2em;
-    padding: 0 30px;
-    display: none;
+    position: fixed;
+    visibility: hidden;
+    top: 15px;
+    left: 30px;
 }
-ul{
+.main-nav{
+    margin-top: 3px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: rgb(73, 68, 68);
+    height: 50px;
+}
+
+.main-menu{
     list-style: none;
-    text-align: right;
+    display: flex;
+    justify-content: right;
+    align-items: right;
 }
 a{
+    
     display: block;
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 1.8em;
 }
-li{
-    height: 55px;
+.item-main-menu{    
     display: inline-block;
+    margin: 5px 50px;
     padding: 10px 25px;
 }
-li:hover{
-    background-color: rgb(36, 33, 33);
+.item-main-menu:hover{
+    background-color: rgb(105, 102, 102);
 }
 @media only screen and (max-width: 1152px) {
-    li{
-        display: block; 
+    .main-menu{
+        background-color: rgb(126, 123, 123);
+        margin-top: 3px;
+        padding: 0%;
         text-align: center;
-        background-color: rgba(85, 85, 85, 0.566);
+        display: none;
+    }
+    .main-menu-visible{
+        display: block;
+        background-color: rgba(100, 98, 98, 0.654);
+        padding: 81px;
+        padding: 0%;
         margin-bottom: 1px;
-        /* width: 150;
-        position: relative;
-        left: 80%;
-        padding: 0%; */
     }
-}
-@media only screen and (max-width: 1152px) {
     .bar-menu{
-        height: 100%;
-        display: flex;
-        justify-content: right;
+        visibility: visible;
+        cursor: pointer;
+        position: absolute;
+        top: 3px;
+        left: 900px;
     }
-    nav>.bar-menu:hover{
-        background-color: rgb(55, 108, 108);
+    .item-main-menu{
+        display: block;
+        text-align: center;
+        position: relative;
+
     }
-    nav .bar-menu:hover> ul{
-        display: inline-block;
+    .item-main-menu:hover{
+        cursor: pointer;
     }
 }
 p{
-    font-size: 2em;
+    margin-top: 100px;
+    font-size: 30px;
 }
+
