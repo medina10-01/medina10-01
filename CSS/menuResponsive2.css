@@ -1,0 +1,114 @@
+*{
+    margin: 0%;
+    border: 0%;
+}
+.menu-bar{
+    display: none;
+}
+nav{
+    background-color: rgb(0, 27, 145);
+    width: 100%;
+}
+ul{
+    list-style: none;
+    text-align: right;
+}
+li{
+    display: inline-block;
+    position: relative;
+}
+nav ul li:hover{
+    background-color: #e6344a;
+}
+nav ul li a{
+    display: block;
+    color: white;
+    font-size: 1.3em;
+    text-decoration: none;
+    padding: 20px;
+}
+.children{
+    position: absolute;
+    display: none;
+   background-color: #011826;
+    text-align: left;
+}
+nav ul li:hover .children{
+    display: block;
+    width: 130%;
+    text-align: left;
+}
+nav ul li .children li{
+    overflow: hidden;
+    display: block;
+    border-bottom: 1px solid black;
+}
+nav ul li .children li a {
+    display: block;
+}
+.main.content{
+    margin: 30px;
+}
+h1{
+    margin: 35px;
+    text-align: center;
+    color: rgb(82, 73, 100);
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    font-size: 1.3em;
+    line-height: 1.4em;
+    text-align: justify;
+}
+.icon-chevron-small-down{
+    float: right;
+    position: relative;
+    top: 3px;
+    padding-left: 5px;
+}
+@media only screen and (max-width:1000px) {
+    body{
+        padding-top: 70px;
+    }
+    nav{
+        position: fixed;
+        height: 100vh;
+        width: 60%;
+        left: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    .menu-bar{
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background-color: red;
+    }
+    .bt-menu{
+        display: block;
+        padding: 20px;
+        color: wheat;
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .menu-bar span{
+        font-size: 60px;
+        float: right;
+    }
+    nav ul {
+        text-align: left;
+    }
+    nav ul li{
+        display: block;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.432);
+    }
+    nav ul .children{
+        position: relative;
+        width: 100%;
+    }
+    nav ul li:hover .children{
+        display: none;
+    }
+}
