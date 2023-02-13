@@ -1,0 +1,60 @@
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.div{
+    height: 100PX;
+    width: 500px;
+    border: solid 3px;
+}
+.box2{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 10px;
+    top: 100%;
+}
+.sub3-1{
+    background-color: rgb(255, 0, 0);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 100%;
+    top: -18px;
+    /* display: none; */
+
+}
+.sub3-2{
+    background-color: rgb(255, 0, 0);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 100%;
+    top: -17px;
+    /* display: none; */
+
+}
+.box3{
+    background-color: rgb(0, 255, 200);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 101%;
+    left: 10px;
+}
+/* .box3:hover{
+}
+.box3:hover .sub3-1, .sub3-2{
+    display: block;
+}  */
+.box4{
+    background-color: rgb(255, 0, 234);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 102%;
+    left: 10px;
+}

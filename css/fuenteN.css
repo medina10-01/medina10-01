@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(2, 2, 43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+h1{
+    font-weight: 400;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 9em;
+    color: red
+    
+}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">

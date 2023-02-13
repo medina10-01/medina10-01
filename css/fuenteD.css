@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(19, 2, 253);
+    display: flex;
+    justify-content: center;
+align-items: center;
+height: 100vh;
+
+}
+
+
+h1 {
+    color: aliceblue;
+    font-size: 10em;
+    font-family: 'waltograph'; box-sizing: border-box;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'waltograph';
+    src: url(../fonts/Walter.ttf);
+}
+
+

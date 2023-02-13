@@ -1,0 +1,90 @@
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+}
+p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: 50px;
+}
+.op{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.ti{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 90px;
+}
+input[type="text"]{
+    padding: 7px;
+    font-size: 1.5px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    width: 550px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+input[type="text"]:hover{
+    background-color: rgb(181, 197, 226);
+}
+input[type="text"].n:focus{
+    outline:none;
+    box-shadow: 2px 2px 6px rgb(109, 210, 15, .4), -1px -1px -6px rgb(109, 210, 15, .4);
+}
+form{
+    margin: 3px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+fieldset{
+    width: 500px;
+    background-color: azure;
+}
+div{
+    display: inline-block;
+    text-align: left;
+}
+.title{
+    background-color: rgb(140, 140, 233, .9);
+    color: aliceblue;
+    width: 100%;
+    text-align: center;
+}
+input[type="submit"]{
+    background-color: rgb(138, 7, 7);
+    color: aliceblue;
+    width: 240px;
+    height: 40px;
+    border-radius: 5%;
+}
+input[type="submit"]:hover{
+    background-color: tomato;
+    width: 260px;
+    height: 40px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+button:hover{
+    background-color: aquamarine;
+    width: 260px;
+    height: 40px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+button{
+    background-color: aliceblue;
+    width: 240px;
+    height: 40px;
+    border-radius: 5%;
+}
+select{
+    width: 235px;
+    height: 50px;
+    background-color: rgb(177, 201, 202);
+    font-size: 20px;
+    cursor: pointer;
+}
+option{
+    font-size: 50px;
+}

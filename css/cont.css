@@ -1,0 +1,27 @@
+.gen{
+    display: inline-block;
+    text-align: center;
+}
+.line_uno{
+    background-color: aqua;
+    height: 30em;
+    width: 30em;
+    align-items: center;
+}
+.line_uno{
+    background-color: aqua;
+}
+
+.line_dos{
+    background-color: aqua;
+    height: 30em;
+    width: 30em;
+    align-items: center;
+}
+.line_tres{
+    background-color: aqua;
+    height: 30em;
+    width: 30em;
+    align-items: center;
+}
+

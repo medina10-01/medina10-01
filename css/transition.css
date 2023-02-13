@@ -1,0 +1,119 @@
+*{
+    margin: 0%;
+    padding: 0;
+}
+.box1{
+    width: 400px;
+    height: 400px;
+    background-color: aqua;
+    transition: background-color 1000ms;
+}
+.box1:hover{
+    cursor: pointer;
+    background-color: bisque;
+}
+.box2{
+    width: 400px;
+    height: 400px;
+    background-color: yellowgreen;
+    left: 0%;
+    transition: left 10s;
+}
+.box1, .box2, .box3, .box3new, .ext{
+    display: inline-block;
+    margin: 13px;
+}
+.box2:hover{
+    position: relative;
+    top: 3px;
+    left: 50%;
+}
+.box3{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(73, 50, 205);
+    position: absolute;
+    left: 902px;
+    transition: left 4s;
+}
+.box3New{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(73, 50, 205);
+    position: absolute;
+    left: 80%;
+    top: 13px;
+    transition: left 4s;
+}
+.ext{
+    padding: 12px;
+    margin-left:50%;
+    width: 40vh;
+    height: 10vh;
+    background-color: rgb(2, 253, 15);
+    border-radius: 300px;
+    transition: background-color 1000ms;
+}
+.extNew{
+    padding: 12px;
+    margin-left:50%;
+    width: 40vh;
+    height: 10vh;
+    background-color: rgb(253, 2, 2);
+    border-radius: 300px;
+    transition: background-color 1000ms;
+}
+.bol{
+    position:relative;
+    left: 0%;
+    top: -86%;
+    width: 10vh;
+    height: 10vh;
+    background-color: gray;
+    border-radius: 1000px;
+    transition: left 2s;
+}
+.bolNew{
+    position:relative;
+    left: 75%;
+    top: -86%;
+    width: 10vh;
+    height: 10vh;
+    background-color: gray;
+    border-radius: 1000px;
+    transition: left 2s;
+}
+.on{
+    margin-top: 3%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 6vh;
+    text-align: left;
+    color: aliceblue;
+    padding-left: 15px;
+}
+.off{
+    margin-top: -18%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 6vh;
+    text-align: right;
+    color: aliceblue;
+    padding-right: 15px;
+}
+.box5{
+
+    display: inline-block;
+    position: fixed;
+    border-radius: 400px;
+    top: 1300px;
+    left: -250px;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(38, 0, 255);
+    transition: all 1000ms;
+}
+.box5:hover{
+    top: 1000px;
+    height: 800px;
+    width: 800px;
+    background-color: bisque;
+}

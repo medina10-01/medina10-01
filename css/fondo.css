@@ -1,0 +1,43 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.box-main{
+    background-image: url(../img/Ruins_Autumn_Grass_442006.jpg);
+    width:100%;
+    height: 100vh;
+    /* para que se ponga en toda la pantalla */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+ul{
+    width: 100%;
+    text-align: right;
+    height: 80px;
+}
+li{
+    padding: 5px 3%;
+    color: rgb(82, 80, 80);
+    font-size: 2em;
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+}
+li:hover{
+    cursor: pointer;
+    border-bottom: solid 2px rgb(160, 131, 38);
+}
+/* .box-main2{
+    background-image: url(../img/300.200.jpg);
+    width: 300px;
+    height: 100vh;
+    /* imagen contenida para que salga toda la imagen */
+    /* background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 50px; 
+}*/
+
+.last-item{
+    margin-right: 5%;
+    
+}

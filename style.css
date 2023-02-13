@@ -1,0 +1,105 @@
+
+*{
+    margin:0;
+    padding:0 ;
+}
+body{
+    background-image: url(img/galaxy-isolation-alone-1391527-wallhere.com.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.box-title{
+    width: 100%;
+    display: block;
+}
+.title{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 10vh;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+}
+.si{
+    background: linear-gradient(60deg, tomato, gold);
+    width: 50vh;
+    display: block;
+    border-bottom: 1px solid darkcyan;
+    margin-top: 3px;
+    border: 2px solid white;
+}
+
+.no{
+    display: none;
+}
+
+.letras{
+    color: rgb(0, 0, 0);
+    font-size: 5vh;
+}
+.titulos{
+    color: rgb(255, 255, 255);
+    display: block;
+    width: 50vh;
+    font-size: 5vh;
+    margin-bottom: 9px;
+    margin-left: 30px;
+
+}
+
+.tareas{
+    transform: rotate(-45deg);
+    position: fixed;
+    bottom: 150px;
+    right: 60px;
+    color: antiquewhite;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 4.5vh;
+}
+.desplegable{
+    background: linear-gradient(90deg, rgba(0, 255, 64, 0.541), rgba(247, 0, 255, 0.582));
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    position: fixed;
+    bottom: -350px;
+    right: -70px;
+}
+.click{
+    position: fixed;
+    bottom: -150px;
+    right: 70px;
+}
+.box-titulos{
+    background: linear-gradient(90deg, rgba(2, 245, 164, 0.568), rgba(0, 0, 255, 0.534));
+    width: 70vh;
+}
+.box-titulosSn{
+    background: linear-gradient(90deg, rgba(2, 232, 248, 0.692), rgba(212, 0, 255, 0.459));
+    width: 70vh;
+    height: 8vh;
+}
+.main{
+    width: 75vh;
+}
+.oc{
+    display: none;
+}
+.main2{
+    width: 80px;
+    height: 40px;
+    border-radius: 30px;
+}
+.men{
+    background: linear-gradient(20deg, rgba(14, 57, 199, 0.466), rgba(25, 121, 150, 0.637));
+    width: 80px;
+    height: 40px;
+    border-radius: 30px;
+    text-align: center;
+    padding-top: 6px;
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: 900; 
+}
