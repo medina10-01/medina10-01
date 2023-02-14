@@ -4,9 +4,10 @@
     padding:0 ;
 }
 body{
-    background-image: url(img/galaxy-isolation-alone-1391527-wallhere.com.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: #FF9D82;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23d9ce94'/%3E%3Cstop offset='1' stop-color='%23d9ce94' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23fea9c1'/%3E%3Cstop offset='1' stop-color='%23fea9c1' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23d8dad3'/%3E%3Cstop offset='1' stop-color='%23d8dad3' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FF9D82'/%3E%3Cstop offset='1' stop-color='%23FF9D82' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23B3FFA6'/%3E%3Cstop offset='1' stop-color='%23B3FFA6' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FDB4FF'/%3E%3Cstop offset='1' stop-color='%23FDB4FF' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
 }
 .box-title{
     width: 100%;
@@ -23,12 +24,13 @@ a{
     text-decoration: none;
 }
 .si{
-    background: linear-gradient(60deg, tomato, gold);
+    background: linear-gradient(60deg, rgb(204, 117, 185), rgba(0, 60, 255, 0.582));
     width: 50vh;
     display: block;
     border-bottom: 1px solid darkcyan;
-    margin-top: 3px;
     border: 2px solid white;
+    position: relative;
+    right: -26%;
 }
 
 .no{
@@ -36,7 +38,7 @@ a{
 }
 
 .letras{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 5vh;
 }
 .titulos{
@@ -44,7 +46,6 @@ a{
     display: block;
     width: 50vh;
     font-size: 5vh;
-    margin-bottom: 9px;
     margin-left: 30px;
 
 }
