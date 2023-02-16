@@ -1,7 +1,7 @@
 .box{
     width: 400px;
     height: 400px;
-    background-color: rgb(128, 128, 128);
+    background-color: rgb(11, 219, 226);
     margin: 10px;
     color: rgb(241, 243, 245);
     font-size: 3vh;
@@ -45,7 +45,7 @@ h2{
 }
 .box-space-between{
     display: flex;
-    background-color: gray;
+    background-color: rgb(33, 216, 16);
     justify-content: space-between;
 }
 .box-space-around{
@@ -97,7 +97,7 @@ h2{
     justify-content: center;
     border-bottom: 2px solid rgb(rgb(56, 56, 56), green, blue);
     width: 750px;
-    box-shadow: 0 2px 5px gray;
+    box-shadow: 0 2px 5px rgb(182, 38, 38);
     border-bottom: 4px solid rgb(16, 25, 27);
 }
 .box-box-aling{
@@ -108,33 +108,71 @@ h2{
     justify-content: center;
     align-items: center;
 }
-.box-45{
-    height: 140px;
-}
-.box-46{
-    height:170px;
-}
-.box-47{
-height: 100px;
-}
-.box-48{
-    height: 50px;
-}
-.box-main-aling{
+.box-main-grafica{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    width: 700px;
+    height: 500px;
 }
-.texto-grafica{
-    transform: rotate(-90deg);
-    font-size: 1.2em;
-    background-color: rgb(170, 120, 120);
-    /* height: 450px;
-    width: 30px; */
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+.leyenda-barras {
+    font-size: 1.8em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
     text-align: center;
-
-
-    
+}
+.box-grafica {
+    border-left: 2px solid black;
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+}
+.linea-hr{
+    position: absolute;
+    width: 500px;
+    z-index: 10;
+}
+.linea100{
+    margin-top: 0;
+}
+.linea80{
+    margin-top: 100px;
+}
+.linea60{
+    margin-top: 200px;
+}
+.linea40{
+    margin-top: 300px;
+}
+.linea20{
+    margin-top: 400px;
+}
+.linea00{
+    margin-top: 500px;
+}
+.barra{
+    z-index: 1;
+    background-color: dodgerblue;
+    width: 80px;
+    margin-left: 30px;
+}
+.barra-grafica{
+    display: flex;
+    align-items: flex-end;
+    height: 500px;
+}
+.barra1{
+    z-index: 11;
+height: 150px;
+}
+.barra2{
+    z-index: 11;
+    height: 180px;
+}
+.barra3{
+    z-index: 11;
+    height: 430px;
+}
+.barra4{
+    z-index: 11;
+    height: 355px;
 }
