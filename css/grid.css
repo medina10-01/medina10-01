@@ -2,10 +2,16 @@
     margin: 0;
     padding: 0;
 }
-.box-main{
+h2{
+    font-size: 3vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(54, 54, 45 .8);
+}
+.box-main-1{
     display: grid;
-    grid-template-columns: 200px 200px 200px;
-    grid-template-rows: 200px 200px 200px;
+    /* template: sirve para dar una base o altura caja por caja */
+    grid-template-columns: 200px 150px 300px;
+    grid-template-rows: 200px 400px 200px;
     border: 2px solid rgb(3, 231, 231);
     width: 600px;
 }
@@ -17,5 +23,34 @@
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 1.4em;
+    font-size: 2.5em;
+    font-weight: 900;
+}
+.box-main-2{
+    display: grid;
+    /* utilizando fraccionarios podemos hacer que la columna sea dividida automaticamente */
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: repeat(3, 200px);
+    border: 2px solid rgb(39, 61, 61);
+    width: 600px;
+}
+.box-main-3{
+    display: grid;
+    /* repeat para que se repiyta una instrucion una cantidad de veses requeridas */
+    grid-template-columns: repeat(2, 220px)1fr;
+    grid-template-rows: 100px repeat(2, 200px)100px;
+    grid-column-start: 3;
+    border: 2px solid rgb(39, 61, 61);
+    width: 600px;
+}
+.box3-1{
+    background-color: goldenrod;
+    /* para crear un encabexado puede modificar el stard y por ultimo el end */
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.box3-8{
+    background-color: gray;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
