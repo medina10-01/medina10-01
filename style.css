@@ -102,3 +102,21 @@ a{
     font-size: 25px;
     font-weight: 900; 
 }
+h6{
+    text-align: center;
+    color: rgba(0, 0, 0, 0);
+}
+.improvise{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: rgba(41, 41, 41, 0.151);
+    width: 20px;
+    height: 20px;
+    border-radius: 300px;
+}
+.no_asunt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
