@@ -1,0 +1,117 @@
+.container{
+    display: grid;
+    padding-top: 20px;
+    grid-gap: 20px;
+    border: 2px solid black;
+    justify-content: center;
+}
+.main-box{
+    display: grid;
+    grid-template:' header empty ' 90px / 
+                    500px   1fr;
+}
+.header{
+    border-radius: 15px;
+    grid-area: header;
+    background-color: red;
+}
+
+.box-img{
+    display: grid;
+    grid-gap: 15px;
+    grid-template:'main-img'500px/
+                   100%;
+}
+.main-img{
+    border-radius: 15px;
+    grid-area: main-img;
+    background-color: rgb(0, 139, 139);
+}
+.box-body{
+    display: grid;
+    grid-gap: 35px;
+    grid-template: 'img-article img-article2 img-article3'630px/
+                    550px        550px       550px;
+    justify-content: center;
+}
+.img-article{
+    border-radius: 15px;
+    grid-area: img-article;
+    background-color: black;
+}
+.img-article2{
+    border-radius: 15px;
+    grid-area: img-article2;
+    background-color: black;
+}
+.img-article3{
+    border-radius: 15px;
+    grid-area: img-article3;
+    background-color: black;
+}
+.words{
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.texto{
+    font-size: 2em;
+}
+
+
+
+.container-Dm{
+    border-radius: 20px;
+    width: 1000px;
+    display: grid;
+    padding: 20px;
+    grid-gap: 20px;
+    border: 2px solid black;
+}
+.main-box-Dm{
+    display: grid;
+    grid-template:' header  ' 90px / 
+                    100%;
+}
+.header-Dm{
+    border-radius: 15px;
+    grid-area: header;
+    background-color: red;
+}
+
+.box-img-Dm{
+    display: grid;
+    grid-gap: 15px;
+    grid-template:'main-img'300px/
+                   100%;
+}
+.main-img-Dm{
+    border-radius: 15px;
+    grid-area: main-img;
+    background-color: rgb(0, 139, 139);
+}
+.box-body-Dm{
+    display: grid;
+    grid-gap: 35px;
+    grid-template: 'img-article'630px/
+                    100%;
+    justify-content: center;
+}
+.img-article-Dm{
+    border-radius: 15px;
+    grid-area: img-article;
+    background-color: black;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+.mac{
+    text-align: center;
+}
+
+

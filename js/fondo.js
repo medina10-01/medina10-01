@@ -23,6 +23,13 @@ let boton8no= document.getElementById('boton8no');
 let boton9no= document.getElementById('boton9no');
 
 menu.addEventListener('click', function () {
+    if (menu.classList.contains('men')) {
+        menu.classList.add('men2')
+        menu.classList.remove('men')
+    } else {
+        menu.classList.remove('men2')
+        menu.classList.add('men')
+    }
     if (main2.classList.contains('main2')) {
         main2.classList.remove('main2');
         main2.classList.add('main')
@@ -32,8 +39,10 @@ menu.addEventListener('click', function () {
     }
     if (body.classList.contains('oc')) {
         body.classList.remove('oc');
+        body.classList.add('vi')
     } else {
         body.classList.add('oc')
+        body.classList.remove('vi');
     }
 })
 

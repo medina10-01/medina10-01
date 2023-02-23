@@ -4,14 +4,19 @@
     padding:0 ;
 }
 body{
-    background-image: url(img/fondo.png);
-    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.353);
 }
 .box-title{
+    display: flex;
+    position: fixed;
+    top: 40%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 100%;
-    display: block;
 }
 .title{
+    background: linear-gradient(80deg, yellow, green, blue);
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 10vh;
@@ -22,13 +27,10 @@ a{
     text-decoration: none;
 }
 .si{
-    background: linear-gradient(60deg, rgb(204, 117, 185), rgba(0, 60, 255, 0.582));
     width: 50vh;
-    display: block;
-    border-bottom: 1px solid darkcyan;
-    border: 2px solid white;
     position: relative;
-    right: -26%;
+    right: -26%;   
+    transition: 50s;
 }
 
 .no{
@@ -36,8 +38,11 @@ a{
 }
 
 .letras{
-    color: rgb(255, 255, 255);
-    font-size: 5vh;
+    background: linear-gradient(60deg, rgb(185, 54, 156), rgba(0, 60, 255, 0.582));
+    border-radius: 10px;
+    border: 1px solid ;
+    color: white;
+    font-size: 4vh;
 }
 .titulos{
     color: rgb(255, 255, 255);
@@ -74,34 +79,54 @@ a{
 .box-titulos{
     background: linear-gradient(90deg, rgba(2, 245, 164, 0.568), rgba(0, 0, 255, 0.534));
     width: 70vh;
+    border-radius: 20px;
 }
 .box-titulosSn{
     background: linear-gradient(90deg, rgba(2, 232, 248, 0.692), rgba(212, 0, 255, 0.459));
     width: 70vh;
-    height: 8vh;
-}
-.main{
-    width: 75vh;
+    border-radius: 20px;
 }
 .oc{
-    display: none;
+    visibility: hidden;
+}
+.vi{
+    visibility: visible;
+    height: auto;
+    transition: 4s;
+}
+.main{
+    position: fixed;
+    top: 150px;
+    left: 30px; 
 }
 .main2{
-    width: 80px;
-    height: 40px;
-    border-radius: 30px;
+    position: fixed;
+    top: 150px;
+    left: 30px;
 }
 .men{
-    background: linear-gradient(20deg, rgba(14, 57, 199, 0.466), rgba(25, 121, 150, 0.637));
-    width: 80px;
+    background: linear-gradient(20deg, rgba(14, 57, 199, 0.616), rgba(11, 178, 229, 0.964));
+    width: 90px;
     height: 40px;
     border-radius: 30px;
     text-align: center;
-    padding-top: 6px;
     color: whitesmoke;
     font-size: 25px;
-    font-weight: 900; 
+    font-weight: 900;
+    transition: 400ms;
 }
+.men2{
+    background: linear-gradient(20deg, rgba(14, 57, 199, 0.616), rgba(11, 178, 229, 0.964));
+    width: 70vh;
+    height: 40px;
+    border-radius: 30px;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: 900;
+    transition: 400ms;
+}
+
 h6{
     text-align: center;
     color: rgba(0, 0, 0, 0);

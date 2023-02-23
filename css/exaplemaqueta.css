@@ -1,0 +1,41 @@
+/* empty para generar vaios */
+.main-box{
+    display: grid;
+    grid-gap: 10px;
+    grid-template: "logo       busquda  boton-empresas iniciar-sesion menu-hamburger" 30px 
+                    "main-img  main-img main-img       main-img       main-img"       600px/
+                    100px      1fr      300px          300px          70px;
+}
+.logo{
+    grid-area: logo;
+    background-color: rgb(152, 202, 63);
+}
+.busqueda{
+    grid-area: busquda;
+    background-color: gainsboro;
+}
+.boton-empresas{
+    grid-area: boton-empresas;
+    background-color: rgb(18, 31, 61);
+}
+.iniciar-sesion{
+    grid-area: iniciar-sesion;
+    background-color: goldenrod;
+}
+.menu-hamburger{
+grid-area: menu-hamburger;
+background-color: aqua;
+}
+.main-img{
+    grid-area: main-img;
+    background-color: dodgerblue;
+}
+.texto-grid {
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
