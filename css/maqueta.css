@@ -1,19 +1,25 @@
+*{
+    padding: 0cm;
+    margin: 0cap;
+}
 .container{
     display: grid;
     padding-top: 20px;
     grid-gap: 20px;
-    border: 2px solid black;
     justify-content: center;
+    border: 1px solid;
 }
 .main-box{
     display: grid;
-    grid-template:' header empty ' 90px / 
-                    500px   1fr;
+    grid-template:'header empty ' 90px / 
+                    500px   60px;
 }
+
 .header{
+
     border-radius: 15px;
     grid-area: header;
-    background-color: red;
+    background-color: rgb(238, 28, 28);
 }
 
 .box-img{
@@ -30,8 +36,8 @@
 .box-body{
     display: grid;
     grid-gap: 35px;
-    grid-template: 'img-article img-article2 img-article3'630px/
-                    550px        550px       550px;
+    grid-template: 'img-article img-article2 img-article3'300px/
+                    1fr         1fr          1fr;
     justify-content: center;
 }
 .img-article{
@@ -62,56 +68,82 @@
     font-size: 2em;
 }
 
-
-
-.container-Dm{
+@media screen and (max-width:1000px){
+.container{
     border-radius: 20px;
-    width: 1000px;
     display: grid;
     padding: 20px;
     grid-gap: 20px;
-    border: 2px solid black;
 }
-.main-box-Dm{
+.main-box{
     display: grid;
     grid-template:' header  ' 90px / 
-                    100%;
+                    90%;
 }
-.header-Dm{
+.header{
     border-radius: 15px;
     grid-area: header;
     background-color: red;
 }
 
-.box-img-Dm{
+.box-img{
     display: grid;
     grid-gap: 15px;
     grid-template:'main-img'300px/
-                   100%;
+                   90%;
 }
-.main-img-Dm{
+.main-img{
     border-radius: 15px;
     grid-area: main-img;
     background-color: rgb(0, 139, 139);
 }
-.box-body-Dm{
+.box-body{
     display: grid;
     grid-gap: 35px;
-    grid-template: 'img-article'630px/
-                    100%;
+    grid-template:  
+                    'img-article'530px
+                    'text1'auto
+                    'img-article2'530px
+                    'text2'auto
+                    'img-article3'530px
+                    'text3'auto/
+                    1000fr
+                    1fr        
+                    1fr      
+                    1fr
+                    1fr        
+                    1fr      
+                    1fr;
     justify-content: center;
+    text-align: center;
 }
-.img-article-Dm{
+.text1{
+    grid-area: text1;
+}
+.text2{
+    grid-area: text2;
+}
+.text3{
+grid-area: text3;
+}
+.img-article{
     border-radius: 15px;
     grid-area: img-article;
     background-color: black;
 }
-.center{
-    display: flex;
-    justify-content: center;
+.img-article2{
+    border-radius: 15px;
+    grid-area: img-article2;
+    background-color: black;
 }
-.mac{
-    text-align: center;
+.img-article3{
+    border-radius: 15px;
+    grid-area: img-article3;
+    background-color: black;
+}  
 }
+
+
+
 
 

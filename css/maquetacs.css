@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main-box{
+    display: grid;
+    grid-gap: 20px;
+    grid-template: "empty-left  main-header    main-header        empty-header   empty-header empty-header empty-right" 120px
+                    "empty-left main-img       main-img           main-img       main-img    main-img  empty-right" 400px
+                    "empty-left img-article-1  empty-img-1        img-article-2  empty-img-2 img-article-3 empty-right" 250px
+                    "empty-left text-article-1 empty-img-1        text-article-2 empty-img-2 text-article-3 empty-right" 140px /
+                     1fr        27%              25px                 27%          25px           27%    1fr;
+
+}
+.main-header{
+    margin-top: 20px;
+    grid-area:main-header;
+    background-color: rgb(212, 8, 1);
+}
+.main-img{
+    grid-area: main-img;
+    background-color: darkcyan;
+}
+.img-article-1{
+    grid-area: img-article-1;
+    background-color: rgb(24, 24, 24);
+}
+.text-article-1{
+    grid-area: text-article-1;
+}
+.img-article-2{
+    grid-area: img-article-2;
+    background-color: rgb(24, 24, 24);
+}
+.text-article-2{
+    grid-area: text-article-2;
+}
+.img-article-3{
+    grid-area: img-article-3;
+    background-color: rgb(24, 24, 24);
+}
+.text-article-3{
+    grid-area: text-article-3;
+}
+.style-box{
+    border-radius: 8px;
+    box-shadow: rgb(0, 0, 0,.24)0 3px 8px;
+}
+.style-article{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3em;
+    text-align: justify;
+    color: rgb(24, 24, 24,.9);
+    line-height: 1.4em;
+}
+@media only screen and (max-width: 1050px){
+    .main-box{
+        grid-template: "empty-left  main-header    main-header        empty-header     empty-right" 120px
+                        "empty-left main-img       main-img           main-img         empty-right" 400px
+                        "empty-left img-article-1  empty-img-1        img-article-2    empty-right" 250px
+                        "empty-left text-article-1 empty-img-1        text-article-2   empty-right" 
+                        "empty-left img-article-3  empty-img-1        empty-img-3      empty-right" 250px
+                        "empty-left text-article-3 empty-img-1        empty-img-3      empty-right"  /
+                         1fr        43%              25px                 43%          1fr;
+    
+    }
+}
+
