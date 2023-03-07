@@ -17,7 +17,7 @@
     padding: 0px 10px;
 }
 .foto{
-    background-image: url(/img/Snapchat-1824624242.jpg);
+    background-image: url(../img/Snapchat-1824624242.jpg);
     width: 245px;
     height: 437px;
     resize: both;
@@ -77,7 +77,7 @@ a{
         align-items: center;
     }
     .foto{
-        background-image: url(/img/Snapchat-1824624242.jpg);
+        background-image: url(../img/Snapchat-1824624242.jpg);
         width: 189px;
         height: 337px;
         resize: both;
