@@ -1,0 +1,47 @@
+.main-box{
+    display: grid;
+    gap: 6px;
+    grid-template:"title   empty-cen empty-r"100px 
+                  "foto1   foto1     foto1  "500px 
+                  "txt1    txt1      txt1   "
+                  "txt2    emptyC    foto2  "500px
+                  "foto3   emptyC    txt3" 500px /
+                  48%      1fr       48% ;
+}
+.title{
+    background-color: rgb(124, 176, 176);
+    grid-area: title;
+}
+.foto-Pri{
+    grid-area: foto1;
+}
+.txt1{
+    grid-area: txt1;
+}
+.txt2{
+    grid-area: txt2;
+}
+.txt3{
+    grid-area: txt3;
+}
+.foto-2{
+    grid-area: foto2;
+}
+.foto-3{
+    grid-area: foto3;
+}
+.img{
+    background-color: rgb(145, 95, 33);
+}
+@media screen and (max-width: 1050px){
+    .main-box{
+        grid-template:"title"100px 
+                      "foto1"500px 
+                      "txt1"
+                      "txt2"   
+                      "foto2  "500px
+                      "txt3"
+                      "foto3" 500px /
+                        1fr;
+    }
+}
