@@ -86,18 +86,18 @@
 }
 @media  screen and (max-width: 450px){
     .main-box{
-        grid-template: "empty-left  main-header       empty-right" 120px
-                        "empty-left main-img          empty-right" 400px
-                        "empty-left img-article-1     empty-right" 250px
-                        "empty-left text-article-1    empty-right" 
-                        "empty-left img-article-2     empty-right" 250px
-                        "empty-left text-article-2    empty-right"  
-                        "empty-left img-article-3     empty-right" 250px
-                        "empty-left text-article-3    empty-right" 
-                        "empty-left img-article-4     empty-right" 250px
-                        "empty-left text-article-4    empty-right" 
-                        "empty-left img-article-5     empty-right" 250px
-                        "empty-left text-article-5    empty-right"  /
-                        0fr         90%               0fr;;
+        grid-template:  " main-header   " 120px
+                        "main-img       " 400px
+                        "img-article-1  " 250px
+                        "text-article-1 " 
+                        "img-article-2  " 250px
+                        "text-article-2 "  
+                        "img-article-3  " 250px
+                        "text-article-3 " 
+                        "img-article-4  " 250px
+                        "text-article-4 " 
+                        "img-article-5  " 250px
+                        "text-article-5 "  /
+                         100%;
     }
 }
