@@ -1,9 +1,14 @@
+body{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .container{
     border: 5px solid;
     width: fit-content;
     border-radius: 30px;
     padding: 10px;
-    margin-top: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,8 +19,8 @@
 
 }
 .foto{
-    background-image: url(/img/IMG_20201204_184423_778.jpg);
-    width: 349px;
+    background-image: url(/img/Snapchat-1824624242.jpg);
+    width: 245px;
     height: 437px;
     resize: both;
     overflow: auto;
@@ -44,6 +49,7 @@
     border: 2px solid;
     border-radius: 13px;
     margin-right: 12px;
+    font-weight: 700;
 }
 a{
     text-decoration: none;
@@ -52,4 +58,9 @@ a{
 .items:hover{
     background: linear-gradient(30deg, gold, rgb(255, 145, 0));
     border: 2px solid rgb(255, 123, 0);
+}
+.name{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 900;
+    font-size: 1.5em;
 }
