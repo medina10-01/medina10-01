@@ -1,3 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+  }
+  html, body {
+    height: 100%;
+  }
+  body {
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: #181818;
+    color: #434343;
+    line-height: 1.6;
+    position: relative;
+    font-family: sans-serif;
+    overflow: hidden;
+  }
+  
+  .lines {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    margin: auto;
+    width: 90vw;
+  }
+  .lines .line {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    background: rgba(113, 109, 109, 0.1);
+    overflow: hidden;
+  }
+  .lines .line::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 15vh;
+    width: 100%;
+    top: -50%;
+    left: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(75%, #ffffff), to(#ffffff));
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+    -webkit-animation: run 7s 0s infinite;
+            animation: run 7s 0s infinite;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+            animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+  }
+  .lines .line:nth-child(1) {
+    margin-left: -25%;
+  }
+  .lines .line:nth-child(1)::after {
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  .lines .line:nth-child(3) {
+    margin-left: 25%;
+  }
+  .lines .line:nth-child(3)::after {
+    -webkit-animation-delay: 2.5s;
+            animation-delay: 2.5s;
+  }
+  
+  @-webkit-keyframes run {
+    0% {
+      top: -50%;
+    }
+    100% {
+      top: 110%;
+    }
+  }
+  
+  @keyframes run {
+    0% {
+      top: -50%;
+    }
+    100% {
+      top: 110%;
+    }
+  }
 .main-box{
     display: flex;
     justify-content: center;
@@ -5,6 +91,7 @@
     height: 100vh;
 }
 .container{
+    background-color: #000000;
     border: 5px solid;
     width: fit-content;
     border-radius: 30px;
@@ -17,6 +104,7 @@
     padding: 0px 10px;
 }
 .foto{
+    z-index: 1;
     background-image: url(../img/Snapchat-1824624242.jpg);
     width: 245px;
     height: 437px;
@@ -27,8 +115,11 @@
 }
 .auto-type{
     color: crimson;
+    font-size: 3vh;
+    border-bottom: 6px double ;
 }
 .title{
+    color: rgb(106, 134, 134);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size:5vh;
     font-weight: 900;
@@ -36,33 +127,41 @@
 .languages{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.4em;
+    color: rgb(38, 78, 120);
 }
 
 .items{
     display: inline-flex;
     height: 40px;
-    width: 130px;
+    width: 140px;
     justify-content: center;
     align-items: center;
-    border: 2px solid;
+    border-bottom: 3px dashed slategrey;
     border-radius: 13px;
     margin-right: 12px;
-    font-weight: 700;
+    margin-bottom: 3px;
+    transition: 1s;
+   
 }
 a{
     text-decoration: none;
     color: red;
 }
 .items:hover{
-    background: linear-gradient(30deg, gold, rgb(255, 145, 0));
-    border: 2px solid rgb(255, 123, 0);
+    background-color: #5a5a5a48;
+    border-top: 3px  solid;
+    border-bottom: 3px solid;
+    transform: scale(1.1);
 }
 .name{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 900;
+    font-family: Arial Narrow Bold, sans-serif;
+    color: #ffffff;
     font-size: 1.5em;
 }
-@media  screen and (max-width: 1050px){
+.menu{
+    margin: 13px 0 0 0;
+}
+@media  screen and (max-width: 650px){
     *{
         margin: 0%;
         padding: 0ch;
@@ -89,15 +188,15 @@ a{
         color: crimson;
     }
     .title{
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: Arial, sans-serif;
         font-size:3vh;
-        font-weight: 900;
     }
     .languages{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 1.4em;
     }
     .items{
+        font-size: 1.5vh;
         display:flex;
         height: 40px;
         width: 130px;
@@ -115,8 +214,7 @@ a{
         border: 2px solid rgb(255, 123, 0);
     }
     .name{
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-weight: 900;
-        font-size: 4vh;
+        font-family:sans-serif;
+        font-size: 3vh;
     }
 }
