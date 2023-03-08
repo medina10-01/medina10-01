@@ -84,7 +84,7 @@
     
     }
 }
-@media  screen and (max-width: 450px){
+@media  screen and (max-width: 650px){
     .main-box{
         grid-template: "empty-left  main-header       empty-right" 120px
                         "empty-left main-img          empty-right" 400px
