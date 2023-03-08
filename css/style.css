@@ -38,8 +38,8 @@ body {
   align-items: center;
   height: 100vh;
   background: #ffffff;
-  background-image: url(img/fondo.png);
-  background-repeat: no-repeat;
+  background-image: url(/img/fondo.png);
+  background-repeat: round;
 }
 @keyframes blink {
   20%,
