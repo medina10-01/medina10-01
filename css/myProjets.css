@@ -1,4 +1,4 @@
-/* section{
+section{
     display: flex;
     width: 600px;
     height: 430px;
@@ -15,7 +15,7 @@ section img:hover{
     width: 300px;
     opacity: 1;
     filter: contrast(120%);
-} */
+} 
 *{
     margin: 0;
     padding: 0%;
