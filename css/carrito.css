@@ -45,10 +45,6 @@ img{
     border: 3px solid orange;
     border-radius: 20px;
 }
-.noBorder{
-    border: 0px solid;
-    border-radius: 20px;
-}
 .opacy{
     opacity: 0.4;
 }

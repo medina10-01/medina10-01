@@ -10,41 +10,53 @@ let imgMini4 = document.getElementById("imgMini4");
 
 imgMini1.addEventListener("click", function () {
     imgBox.setAttribute("src", ("img/image-product-1.jpg"));
-    imgMini1.classList.add("border")
-    imgMini2.classList.remove("border")
-    imgMini3.classList.remove("border")
-    imgMini4.classList.remove("border")
+    
+    boxImg2.classList.remove("border");
+    boxImg3.classList.remove("border");
+    boxImg4.classList.remove("border");
+    boxImg1.classList.add("border");
+
+    imgMini1.classList.add("opacy");
+    imgMini2.classList.remove("opacy");
+    imgMini3.classList.remove("opacy");
+    imgMini4.classList.remove("opacy");
 
 });
 imgMini2.addEventListener("click", function () {
     imgBox.setAttribute("src", ("img/image-product-2.jpg"));
+    
+    boxImg1.classList.remove("border");
+    boxImg3.classList.remove("border");
+    boxImg4.classList.remove("border");
+    boxImg2.classList.add("border");
+    
 
-    imgMini2.classList.add("opacy")
-    imgMini1.classList.remove("opacy")
-    imgMini3.classList.remove("opacy")
-    imgMini4.classList.remove("opacy")
-
-    imgMini2.classList.add("border")
-    imgMini1.classList.remove("border")
-    imgMini3.classList.remove("border")
-    imgMini4.classList.remove("border")
+    imgMini2.classList.add("opacy");
+    imgMini1.classList.remove("opacy");
+    imgMini3.classList.remove("opacy");
+    imgMini4.classList.remove("opacy");
 });
 imgMini3.addEventListener("click", function () {
     imgBox.setAttribute("src", ("img/image-product-3.jpg"));
-    imgMini2.classList.add("opacy")
-    imgMini1.classList.remove("opacy")
-    imgMini3.classList.remove("opacy")
-    imgMini4.classList.remove("opacy")
-    
-    imgMini3.classList.add("border")
-    imgMini2.classList.remove("border")
-    imgMini1.classList.remove("border")
-    imgMini4.classList.remove("border")
+    boxImg3.classList.add("border");
+    boxImg2.classList.remove("border");
+    boxImg2.classList.remove("border");
+    boxImg4.classList.remove("border");
+
+    imgMini3.classList.add("opacy");
+    imgMini2.classList.remove("opacy");
+    imgMini2.classList.remove("opacy");
+    imgMini4.classList.remove("opacy");
 });
 imgMini4.addEventListener("click", function () {
     imgBox.setAttribute("src", ("img/image-product-4.jpg"));
-    imgMini4.classList.add("border")
-    imgMini2.classList.remove("border")
-    imgMini3.classList.remove("border")
-    imgMini1.classList.remove("border")
+    boxImg4.classList.add("border");
+    boxImg1.classList.remove("border");
+    boxImg3.classList.remove("border");
+    boxImg2.classList.remove("border");
+
+    imgMini4.classList.add("opacy");
+    imgMini2.classList.remove("opacy");
+    imgMini3.classList.remove("opacy");
+    imgMini1.classList.remove("opacy");
 });
