@@ -151,9 +151,6 @@ a{
 .me2{
   color: goldenrod;
 }
-.me2:hover{
-  color: #434343;
-}
 .items:hover{
     background-color: #5a5a5a48;
     border-top: 3px  solid;

@@ -1,4 +1,4 @@
-section{
+/* section{
     display: flex;
     width: 600px;
     height: 430px;
@@ -15,44 +15,45 @@ section img:hover{
     width: 300px;
     opacity: 1;
     filter: contrast(120%);
-} 
+} */
 *{
     margin: 0;
     padding: 0%;
 }
 .main-box{
-    grid-gap: 5px;
+    grid-gap: 0px;
     display: grid;
-    grid-template:"empty1  title  empty2" 80px/
-                    25%   1fr    25%;
+    grid-template:"empty1       title        empty2"
+                  "emptyl       div-bottom   empty2"6px
+                  "emptyb       emptyb       emptyb"30px/
+                    25%         1fr          25%;
 }
 .title{
-    background-color: red;
     grid-area: title;
+    font-size: 3em;
+    text-align: center;
+    font-weight: 800;
+    font-style: italic;
+}
+.div-bottom{
+    grid-area: div-bottom;
+    background-color: yellowgreen;
 }
 .contain{
-    gap: 40px 0px;
     display: grid;
-    grid-template:"emptyr  menu1    emptyc   menu2      emptyl     emptyf"360px
-                  "emptyr  menu3    emptyc   menu4      emptyl     emptyf"360px 
-                  "emptyr  menu5    emptyc   menu6      emptyl     emptyf"360px
-                  "emptyr  menu7    emptyc   menu8      emptyl     emptyf"360px
-                  "emptyr  menu9    emptyc   menu10     emptyl     emptyf"360px
-                  "emptyr  menu11   emptyc   empty_new  emptyl     emptyf"360px/
-                  1fr      25%      24%      25%        24%        1fr;
+    grid-template:"emptyr  menu1    emptyc   menu2       emptyf"360px
+                  "emptyr  menu3    emptyc   menu4       emptyf"360px 
+                  "emptyr  menu5    emptyc   menu6       emptyf"360px
+                  "emptyr  menu7    emptyc   menu8       emptyf"360px
+                  "emptyr  menu9    emptyc   menu10      emptyf"360px
+                  "emptyr  menu11   emptyc   empty_new   emptyf"360px/
+                  1fr      45%      1fr      45%         1fr;
 }                 
-.main-menu{
-    background-color: aquamarine;
-}
-.main-meneu-fuentes{
-    grid-area: menu1;
-    
-}
-
 .menu1{
     z-index: 1;
-    height: 360px;
+    grid-area: menu1;
 }
+
 .menu2{
     grid-area: menu2;
 }
@@ -83,6 +84,21 @@ section img:hover{
 .menu11{
     grid-area: menu11;
 }
+.box-title{
+    text-align: center;
+    width: 100%;
+    background: linear-gradient(0deg, gray, white);
+    height: 7vh;
+    font-size: 4vh;
+    padding-top: 3%;
+    font-weight: 800;
+    margin-bottom: 1em;
+}
+.box-main-menu{
+    border: 1px solid;
+    width: 400px;
+    height: 13em;
+}
 .fuentes{
     grid-area: fuentes;
 }
@@ -106,11 +122,4 @@ li{
 }
 a{
     text-decoration: none;
-}
-.center{
-    display: grid;
-    align-items: center;
-}
-.menu1:hover .fuentes{
-    transform: translateX(10px);
 }
