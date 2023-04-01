@@ -40,12 +40,12 @@ imgMini3.addEventListener("click", function () {
     imgBox.setAttribute("src", ("img/image-product-3.jpg"));
     boxImg3.classList.add("border");
     boxImg2.classList.remove("border");
-    boxImg2.classList.remove("border");
+    boxImg1.classList.remove("border");
     boxImg4.classList.remove("border");
 
     imgMini3.classList.add("opacy");
     imgMini2.classList.remove("opacy");
-    imgMini2.classList.remove("opacy");
+    imgMini1.classList.remove("opacy");
     imgMini4.classList.remove("opacy");
 });
 imgMini4.addEventListener("click", function () {
