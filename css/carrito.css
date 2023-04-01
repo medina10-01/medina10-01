@@ -1,0 +1,132 @@
+.title{
+    text-align: center;
+}
+.box-main{
+    display: grid;
+    width: 100%;
+    grid-template:"empty-q img-box-main   conted   empty-f"555px/ 
+                   1fr    435px           50%      1fr;
+}
+img{
+    border-radius: 13px;
+}
+.conted{
+    padding: 0px 100px;
+    grid-area: conted;
+}
+.t-orange{
+    color: rgb(255, 119, 0);
+    font-size: 3vh;
+    font-weight: 700;
+}
+.fall-title{
+    font-size: 3em;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.info-box{
+    margin-top: 10px;
+    opacity: 0.8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 3.5vh;
+    line-height: 30px;
+}
+.img-box-main{
+    display: grid;
+    grid-area: img-box-main;
+    height: 100vh;
+    width: 100%;
+    grid-template: "img-box    img-box   img-box    img-box   img-box    img-box   img-box"   435px
+                   "empty-0    empty-0   empty-0    empty-0   empty-0    empty-0   empty-0"   30px
+                   "box-img1   empty1    box-img2   empty2    box-img3   empty3    box-img4" 90px/
+                   90px        25px      90px       25px      90px       25px      90px;
+}
+.img-box{
+    grid-area: img-box;
+    width: 100%;
+    cursor: pointer;
+}
+.img-mini{
+    width: 100%;
+    cursor: pointer;
+}
+.box-img1{
+    grid-area: box-img1;
+}
+.box-img2{
+    grid-area: box-img2;
+}
+.box-img3{
+    grid-area: box-img3;
+}
+.box-img4{
+    grid-area: box-img4;
+}
+.border{
+    border: 3px solid orange;
+    border-radius: 20px;
+}
+.opacy{
+    opacity: 0.4;
+}
+.info-des{
+    display: flex;
+}
+.valor{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.9em;
+    margin-right: 20px;
+}
+.descuento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: rgb(255, 98, 0);
+}
+.valor-ini{
+    opacity: .5;
+    font-weight: 600;
+    text-decoration: line-through;
+}
+.carrito{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+}
+.mas, .menos{
+    border: none;
+    font-size: 2em;
+    color: orange;
+    cursor: pointer;
+}
+.add{
+    background-color: rgb(255, 111, 0);
+    color: wheat;
+    display: flex;
+    align-items: center;
+    border: 3px solid rgb(227, 115, 0);
+    cursor: pointer;
+    padding: 10px 3px;
+    margin-left: 15px;
+    width: 30%;
+    font-size: 2vh;
+    justify-content: center;
+    border-radius: 8px;
+}
+.total{
+    font-weight: 700;
+    font-size: 2vh;
+}
+.numero{
+    margin: 0px 30px;
+    font-size: 2em;
+}
+.cart-add{
+    line-height: 20px;
+    font-size: 2vh;
+}
