@@ -1,14 +1,75 @@
+.head{
+    box-shadow: 1px, 0px, 1px black;
+    display: grid;
+    grid-template: "empty-der  box-title        empty-cen       empty-center       empty-center      empty-hiz"30px
+                   "empty-der  box-title        box-info        empty              carrito           empty-hiz"50px
+                   "empty-der  box-title        box-info        borde-inferior     borde-inferior    empty-hiz"3px/
+                    1fr         37vh            100vh           250px              30px              1fr ; 
+}
+.box-title{
+    grid-area: box-title;
+    font-size: 2.5vh;
+    border-bottom: 3px solid rgb(0, 0, 0,0.5);
+}
+.box-contac{
+    grid-area: nosotros;
+    text-align: center;
+    padding-top: 15%;
+}
+.box-realizado{
+    grid-area: carrito;
+}
+.borde-inferior{
+    grid-area: borde-inferior;
+    background-color: black;
+    opacity: 0.5;
+}
+.box-info{
+    display: flex;
+    grid-area: box-info;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+}
+.opacity{
+    align-items: center;
+    height: 90%;
+    opacity: 0.6;
+    cursor: pointer;
+    margin: 0 9px;
+}
+.opacity:hover{
+    border-bottom: 5px solid rgb(255, 119, 0);
+}
+.canasta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+}
+.canasta-new{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    border: 2px solid orange;
+}
 .title{
     text-align: center;
+    opacity: .85;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .box-main{
+    margin-top: 2vh;
     display: grid;
     width: 100%;
-    grid-template:"empty-q img-box-main   conted   empty-f"555px/ 
-                   1fr    435px           50%      1fr;
+    grid-template:  "empty-a   img-box-main    conted      empty-f"/ 
+                    1fr        435px           50%         1fr;
 }
 img{
-    border-radius: 13px;
+    border-radius: 6px;
 }
 .conted{
     padding: 0px 100px;
@@ -35,7 +96,7 @@ img{
 .img-box-main{
     display: grid;
     grid-area: img-box-main;
-    height: 100vh;
+    height: auto;
     width: 100%;
     grid-template: "img-box    img-box   img-box    img-box   img-box    img-box   img-box"   435px
                    "empty-0    empty-0   empty-0    empty-0   empty-0    empty-0   empty-0"   30px
@@ -52,23 +113,29 @@ img{
     cursor: pointer;
 }
 .box-img1{
+    width: 100%;
     grid-area: box-img1;
 }
 .box-img2{
+    width: 100%;
     grid-area: box-img2;
 }
 .box-img3{
+    width: 100%;
     grid-area: box-img3;
 }
 .box-img4{
+    width: 100%;
     grid-area: box-img4;
 }
 .border{
-    border: 3px solid orange;
-    border-radius: 20px;
+    width: 85px;
+    height:85px;
+    border: 4px solid rgb(255, 128, 0);
+    border-radius: 10px;
 }
 .opacy{
-    opacity: 0.4;
+    opacity: 0.9;
 }
 .info-des{
     display: flex;
@@ -93,16 +160,25 @@ img{
 }
 .carrito{
     margin-top: 10px;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    justify-content: left;
     align-items: center;
+    text-align: center;
     font-weight: 800;
+    grid-template: "mas     numero menos add" auto/
+                    35px    50px   35px  1fr;
 }
 .mas, .menos{
     border: none;
     font-size: 2em;
     color: orange;
     cursor: pointer;
+}
+.mas{
+    grid-area: mas;
+}
+.menos{
+    grid-area: menos;
 }
 .add{
     background-color: rgb(255, 111, 0);
@@ -117,16 +193,107 @@ img{
     font-size: 2vh;
     justify-content: center;
     border-radius: 8px;
+    grid-area: add;
 }
 .total{
     font-weight: 700;
     font-size: 2vh;
 }
 .numero{
-    margin: 0px 30px;
     font-size: 2em;
+    grid-area: numero;
 }
 .cart-add{
     line-height: 20px;
     font-size: 2vh;
+}
+.check{
+    background-color: orange;
+    font-size: 3vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 700;
+}
+.list{
+    display: grid;
+    box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.42);
+    padding: 10px;
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    grid-template:  "head-cart  head-cart   head-cart"  50px
+                    "cart-body  cart-body   cart-body"  auto
+                    "vacio      vacio       vacio"      auto
+                    "emptyr     check       emptyl"     auto/
+                    30px        1fr         30px;
+}
+.head-cart{
+    grid-area: head-cart;
+    display: grid;
+    grid-template: "cart  empty exit"50px
+                   "linea linea linea"1px/
+                    20px 1fr    20px;
+}
+.vacio{
+    grid-area: vacio;
+    padding: 20px;
+}
+.cart{
+    grid-area: cart;
+    font-size: 2.5vh;
+    font-weight: 900;
+    text-align: left;
+    position: relative;
+    padding: 10px;
+}
+.linea{
+    background-color: rgba(0, 0, 0, 0.5);
+    grid-area: linea;
+}
+.exit{
+    grid-area: exit;
+    font-size: 4vh;
+    font-weight: 900;
+    cursor: pointer;
+}
+.check{
+    grid-area: check;
+}
+.cart-body{
+    grid-area: cart-body;
+    padding: 30px 10px;
+    width: 370px;
+    display: grid;
+    grid-template: "cart-img    empty-cart     text-cart    text-cart   delate"35px
+                   "cart-img    empty-cart     valor-cart   valor-pago  delate"35px/
+                   64px         10px           1fr          1fr         20px;
+}
+.cart-img{
+    grid-area: cart-img;
+    resize: both;
+    overflow: auto;
+    background-repeat: round;
+    border-radius: 6px;
+}
+.box-text-cart{
+    grid-area: text-cart;
+    font-size: 2.4vh;
+}
+.valor-cart{
+    grid-area: valor-cart;
+    font-size: 2.4vh;
+    opacity: .5;
+    text-align: center;
+}
+.valor-pago{
+    grid-area: valor-pago;
+    font-size: 2.4vh;
+}
+.delate{
+    grid-area: delate;
+}
+.cart-body-hiden{
+    display: none;
 }

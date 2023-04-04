@@ -10,7 +10,24 @@
 
 </head>
 <body>
-    <h1 class="title">carrito de compras</h1>
+    <div class="head">
+        <div class="box-title">
+            <h1 class="title">sneakers</h1>
+        </div>
+       <div class="box-info">
+            <div class="opacity box-collections">collections</div>
+            <div class="opacity box-men">men</div>
+            <div class="opacity women">Women</div>
+            <div class="opacity about">About</div>
+            <div class="opacity contact">Contact</div>
+       </div>
+        <div class="borde-inferior"></div>
+        <div class="box-realizado">
+            <div id="boxCanasta" class="canasta">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+    </div>
     <div class="box-main">
         <div class="img-box-main">
              <div  class="img-box"> 
@@ -40,16 +57,31 @@
                     <div class="descuento">50%</div>
                 </div>
                 <div class="valor-ini">250.00</div>
-                <div class="total">Total: $0</div>
-                <div class="carrito">
-                                    <button class="menos">-</button>
-                <div class="numero" id="boxNumero">0</div>
-                <button class="mas">+</button>
-                <button class="add"><div class="imag"><i class="fa-solid fa-cart-shopping"></i><span class="cart-add">add to cart</span></div></button>
-                </div>
 
-
+                    <div id="boxTotal" class="total">Total: $0</div>
+                    <div class="carrito">
+                    <button id="menos" class="menos">-</button>
+                    <div class="numero"><span id="contador">0</span></div>
+                    <button id="mas" class="mas">+</button>
+                    <button id="boxCard" class="add"><div class="imag"><i class="fa-solid fa-cart-shopping"></i><span class="cart-add">add to cart</span></div></button>
+                    </div>
         </div>
+    </div>
+    <div class="cart-body-hiden" id="boxCompras">
+        <div class="head-cart">
+            <div class="cart">Carro</div>
+            <div class="exit" id="boxExit">x</div>
+            <div class="linea"></div>
+        </div>
+        <div id="boxEmpty" class="vacio">su carrito de compras está vacio.</div>
+        <div id="boxBody" class="cart-body-hiden">    
+            <div class="cart-img"><img src="img/image-product-1-thumbnail.webp" alt="img-Snakers"></div>
+            <div class="box-text-cart">fall limited Snakers Edition</div>
+            <div id="valorCart" class="valor-cart">125*0</div>
+            <div id="valorPago" class="valor-pago">000.00</div>
+            <div id="boxDelate" class="delate"><i class="fa-solid fa-trash-can"></i></div>
+        </div>
+        <button class="check">Checkout</button>
     </div>
 </body>
 <script src="js/carrito.js"></script>
