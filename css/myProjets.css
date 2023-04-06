@@ -264,3 +264,30 @@ section img:hover{
 .no-ver{
     display: none;
 }
+@media  screen and (max-width: 650px){
+    .main-box{
+        display: grid;
+        grid-template:"empty-d      title           empty-h"
+                      "div-bottom      div-bottom   div-bottom "6px
+                      "empty-d      emptyb          empty-h"30px/
+                       200px         1fr             200px   ;
+    }
+    .contain{
+        display: grid;
+        grid-template:"empty-d  menu1   empty-h"360px
+                      "empty-d  menu2   empty-h"360px
+                      "empty-d  menu3   empty-h"360px
+                      "empty-d  menu4   empty-h"360px 
+                      "empty-d  menu5   empty-h"360px
+                      "empty-d  menu6   empty-h"360px
+                      "empty-d  menu7   empty-h"360px
+                      "empty-d  menu8   empty-h"360px
+                      "empty-d  menu9   empty-h"360px
+                      "empty-d  menu10  empty-h"360px
+                      "empty-d  menu11  empty-h"360px/
+                        10px     1fr     10px;
+    } 
+    .menu4{
+        color: red;
+    }
+}
