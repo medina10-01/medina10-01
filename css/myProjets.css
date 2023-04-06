@@ -1,27 +1,11 @@
-/* section{
-    display: flex;
-    width: 600px;
-    height: 430px;
-}
-section img{
-    width: 0px;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: .8;
-    transition: .5s ease;
-}
-section img:hover{
-    cursor: crosshair;
-    width: 300px;
-    opacity: 1;
-    filter: contrast(120%);
-} */
 *{
     margin: 0;
     padding: 0%;
 }
+body{
+    background: linear-gradient(95deg, rgb(52, 52, 52), rgb(45, 45, 45), rgb(54, 54, 54));
+}
 .main-box{
-    grid-gap: 0px;
     display: grid;
     grid-template:"empty1       title        empty2"
                   "emptyl       div-bottom   empty2"6px
@@ -34,10 +18,31 @@ section img:hover{
     text-align: center;
     font-weight: 800;
     font-style: italic;
+    color: #ffffff;
 }
 .div-bottom{
     grid-area: div-bottom;
-    background-color: yellowgreen;
+    background-color: rgb(0, 0, 0);
+    animation: colorchange 4s infinite;
+    border-radius: 10px;
+}
+@keyframes colorchange{
+    0% {
+        background-color: rgb(93, 91, 91);
+      }
+    25%{
+        background-color: rgb(184, 184, 184);
+    }
+    50% {
+        background-color: rgb(255, 255, 255);
+      }
+    75%{
+        background-color: rgb(184, 184, 184);
+    }
+      100% {
+        background-color: rgb(66, 66, 66);
+      }
+
 }
 .contain{
     display: grid;
@@ -49,59 +54,166 @@ section img:hover{
                   "emptyr  menu11   emptyc   empty_new   emptyf"360px/
                   1fr      45%      1fr      45%         1fr;
 }                 
-.menu1{
-    z-index: 1;
+.menu1{    
     grid-area: menu1;
+    display: grid;
+    grid-template:  "title-fuentes  title-fuentes    title-fuentes "
+                    "emptyl         fuentes          emptyr"/
+                    50px            1fr              50px;
 }
-
+.box-fuentes{
+    grid-area: fuentes;
+}
+.title-fuentes{
+    grid-area: title-fuentes ;
+}
 .menu2{
     grid-area: menu2;
+    display: grid;
+    grid-template: "title-colores  title-colores    title-colores "
+                    "emptyl         colores          emptyr"/
+                    50px            1fr              50px;
+}
+.box-colores{
+    grid-area: colores;
+}
+.title-colores{
+    grid-area: title-colores ;
 }
 .menu3{
     grid-area: menu3;
+    display: grid;
+    grid-template:  "title-enfatizar  title-enfatizar    title-enfatizar "
+                    "emptyl         enfatizar          emptyr"/
+                    50px            1fr              50px;
+}
+.box-enfatizar{
+    grid-area: enfatizar;
+}
+.title-enfatizar{
+    grid-area: title-enfatizar ;
 }
 .menu4{
     grid-area: menu4;
+    display: grid;
+    grid-template:  "title-alinear  title-alinear    title-alinear "
+                    "emptyl         alinear          emptyr"/
+                    50px            1fr              50px;
+}
+.box-alinear{
+    grid-area: alinear;
+}
+.title-alinear{
+    grid-area: title-alinear ;
 }
 .menu5{
     grid-area: menu5;
+    display: grid;
+    grid-template:  "title-imagenes  title-imagenes    title-imagenes "
+                    "emptyl         imagenes          emptyr"/
+                    50px            1fr              50px;
+}
+.box-imagenes{
+    grid-area: imagenes;
+}
+.title-imagenes{
+    grid-area: title-imagenes ;
 }
 .menu6{
     grid-area: menu6;
+    display: grid;
+    grid-template:  "title-menus  title-menus    title-menus "
+                    "emptyl         menus          emptyr"/
+                    50px            1fr              50px;
+}
+.box-menus{
+    grid-area: menus;
+}
+.title-menus{
+    grid-area: title-menus ;
 }
 .menu7{
     grid-area: menu7;
+    display: grid;
+    grid-template:  "title-contenedor  title-contenedor    title-contenedor "
+                    "emptyl         contenedor          emptyr"/
+                    50px            1fr              50px;
+}
+.box-contenedor{
+    grid-area: contenedor;
+}
+.title-contenedor{
+    grid-area: title-contenedor ;
 }
 .menu8{
     grid-area: menu8;
+    display: grid;
+    grid-template:  "title-tablas  title-tablas    title-tablas "
+                    "emptyl         tablas          emptyr"/
+                    50px            1fr              50px;
+}
+.box-tablas{
+    grid-area: tablas;
+}
+.title-tablas{
+    grid-area: title-tablas ;
 }
 .menu9{
     grid-area: menu9;
+    display: grid;
+    grid-template:  "title-formularios  title-formularios    title-formularios "
+                    "emptyl         formularios          emptyr"/
+                    50px            1fr              50px;
+}
+.box-formularios{
+    grid-area: formularios;
+}
+.title-formularios{
+    grid-area: title-formularios ;
 }
 .menu10{
     grid-area: menu10;
+    display: grid;
+    grid-template:  "title-sesion  title-sesion    title-sesion "
+                    "emptyl         sesion          emptyr"/
+                    50px            1fr              50px;
+}
+.box-sesion{
+    grid-area: sesion;
+}
+.title-sesion{
+    grid-area: title-sesion ;
 }
 .menu11{
     grid-area: menu11;
+    display: grid;
+    grid-template:  "title-botones  title-botones    title-botones "
+                    "emptyl         botones          emptyr"/
+                    50px            1fr              50px;
 }
+.box-botones{
+    grid-area: botones;
+}
+.title-botones{
+    grid-area: title-botones ;
+}
+
+
+
 .box-title{
+    border-radius: 13px;
     text-align: center;
     width: 100%;
     background: linear-gradient(0deg, gray, white);
     height: 7vh;
-    font-size: 4vh;
-    padding-top: 3%;
+    font-size: 5.1vh;
     font-weight: 800;
-    margin-bottom: 1em;
 }
 .box-main-menu{
-    border: 1px solid;
-    width: 400px;
+    border: 1px solid white;
     height: 13em;
 }
-.fuentes{
-    grid-area: fuentes;
-}
+
 li{
     list-style-type: none;
 }
@@ -122,4 +234,33 @@ li{
 }
 a{
     text-decoration: none;
+    color: rgb(10, 115, 115);
+}
+img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+section{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+section img:hover{
+    cursor: pointer;
+    width: 200px;
+    opacity: 1;
+    filter: contrast(120%);
+} 
+.no-ver{
+    display: none;
 }

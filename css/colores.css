@@ -1,4 +1,6 @@
-
+body{
+    padding: 0 25%;
+}
 .box { 
     display: inline-block;
     width: 300px;

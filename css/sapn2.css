@@ -1,0 +1,14 @@
+.highlight {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .italic {
+    font-style: italic;
+    color: rgb(240, 147, 25);
+  }
+  
+  .underline {
+    text-decoration: underline;
+    color:orange;
+  }
