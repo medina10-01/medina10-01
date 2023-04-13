@@ -8,8 +8,6 @@ let imgMini2 = document.getElementById("imgMini2");
 let imgMini3 = document.getElementById("imgMini3");
 let imgMini4 = document.getElementById("imgMini4");
 
-
-
 imgMini1.addEventListener("click", function () {
     imgBox.setAttribute("src", ("img/image-product-1.jpg"));
     
@@ -144,4 +142,79 @@ boxCard.addEventListener('click', function () {
   if(valorContador == 0){
     alert('su pedido es invalido intente nuevamente');
   }
-})
+});
+
+let imgBoxbody = document.getElementById("imgBoxBody");
+let boxImgbody1 = document.getElementById("boxImgBody1");
+let boxImgbody2 = document.getElementById("boxImgBody2");
+let boxImgbody3 = document.getElementById("boxImgBody3");
+let boxImgbody4 = document.getElementById("boxImgBody4");
+let imgMinibody1 = document.getElementById("imgMiniBody1");
+let imgMinibody2 = document.getElementById("imgMiniBody2");
+let imgMinibody3 = document.getElementById("imgMiniBody3");
+let imgMinibody4 = document.getElementById("imgMiniBody4");
+let imgBody = document.getElementById('imgBody');
+let exitBOdy= document.getElementById('bodyExit');
+
+imgBox.addEventListener('click', function () {
+  imgBody.classList.add('img-body');
+  imgBody.classList.remove('img-body-none');
+});
+
+exitBOdy.addEventListener('click', function () {
+  imgBody.classList.remove('img-body');
+   imgBody.classList.add('img-body-none');
+});
+
+imgMinibody1.addEventListener("click", function () {
+  imgBoxbody.setAttribute("src", ("img/image-product-1.jpg"));
+  
+  boxImgbody2.classList.remove("border");
+  boxImgbody3.classList.remove("border");
+  boxImgbody4.classList.remove("border");
+  boxImgbody1.classList.add("border");
+
+  imgMinibody1.classList.add("opacy");
+  imgMinibody2.classList.remove("opacy");
+  imgMinibody3.classList.remove("opacy");
+  imgMinibody4.classList.remove("opacy");
+
+});
+imgMinibody2.addEventListener("click", function () {
+  imgBoxbody.setAttribute("src", ("img/image-product-2.jpg"));
+  
+  boxImgbody1.classList.remove("border");
+  boxImgbody3.classList.remove("border");
+  boxImgbody4.classList.remove("border");
+  boxImgbody2.classList.add("border");
+  
+
+  imgMinibody2.classList.add("opacy");
+  imgMinibody1.classList.remove("opacy");
+  imgMinibody3.classList.remove("opacy");
+  imgMinibody4.classList.remove("opacy");
+});
+imgMinibody3.addEventListener("click", function () {
+  imgBoxbody.setAttribute("src", ("img/image-product-3.jpg"));
+  boxImgbody3.classList.add("border");
+  boxImgbody2.classList.remove("border");
+  boxImgbody1.classList.remove("border");
+  boxImgbody4.classList.remove("border");
+
+  imgMinibody3.classList.add("opacy");
+  imgMinibody2.classList.remove("opacy");
+  imgMinibody1.classList.remove("opacy");
+  imgMinibody4.classList.remove("opacy");
+});
+imgMinibody4.addEventListener("click", function () {
+  imgBoxbody.setAttribute("src", ("img/image-product-4.jpg"));
+  boxImgbody4.classList.add("border");
+  boxImgbody1.classList.remove("border");
+  boxImgbody3.classList.remove("border");
+  boxImgbody2.classList.remove("border");
+
+  imgMinibody4.classList.add("opacy");
+  imgMinibody2.classList.remove("opacy");
+  imgMinibody3.classList.remove("opacy");
+  imgMinibody1.classList.remove("opacy");
+});
