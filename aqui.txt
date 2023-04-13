@@ -1,0 +1,16 @@
+            <div class="exit-body" id="bodyExit"><i class="fa-regular fa-circle-xmark"></i></div>
+            <div  class="img-box"> 
+                <img id="imgBox"  class="img-box" src="img/image-product-1.jpg" alt="image-product-1">
+             </div> 
+            <div id="boxImg1" class="box-img1  border"> 
+                <img id="imgMini1"  class="img-mini opacy" src="img/image-product-1-mini.jpg" alt="image-product-2">
+            </div>
+            <div id="boxImg2" class="box-img2  noBorder">
+                <img id="imgMini2" class="img-mini" src="img/image-product-2-mini.jpg" alt="image-product-3">
+            </div>
+            <div id="boxImg3" class="box-img3  noBorder">
+                <img id="imgMini3"  class="img-mini" src="img/image-product-3-mini.jpg" alt="image-product-3">
+            </div>
+            <div id="boxImg4" class="box-img4  noBorder">
+                <img id="imgMini4" class="img-mini" src="img/image-product-4-mini.jpg" alt="image-product-4">
+            </div> 

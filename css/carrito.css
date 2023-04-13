@@ -35,12 +35,18 @@
     grid-area: box-info;
     border-bottom: 3px solid rgba(0, 0, 0, 0.5);
 }
-.opacity{
+.opacy{
     align-items: center;
-    height: 90%;
-    opacity: 0.6;
+    opacity: .7;
     cursor: pointer;
-    margin: 0 9px;
+    background-color: rgba(240, 248, 255, 0.959);
+}
+.opacity{
+    opacity: .6;
+    align-items: center;
+    padding: 1px;
+    font-size: 4vh;
+    margin-left: 13px;
 }
 .opacity:hover{
     border-bottom: 5px solid rgb(255, 119, 0);
@@ -224,7 +230,6 @@ img{
     display: grid;
     box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.42);
     padding: 10px;
-    position: absolute;
     top: 100px;
     right: 20px;
     border-radius: 10px;
@@ -303,4 +308,36 @@ img{
 }
 .cart-body-hiden{
     display: none;
+}
+.img-body{
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.838);
+    display: grid;
+    grid-template:  "empty-l empty-c      empty-d" 0px
+                    "empty-l muestra      empty-d" auto/
+                    1fr      40%           1fr;
+}
+.img-body-none{
+    display: none;
+}
+.exit-body{
+    margin-top: 10px;
+    grid-area: exit-body;
+    color: rgb(255, 255, 255);
+    font-size: 5vh;
+}
+.box-body-img{
+    display: grid;
+    grid-area: muestra;
+    height: auto;
+    width: 100%;
+    grid-template:  "empty-he   empty-he  empty-he   exit-body empty-hea  empty-hea empty-hea"   60px
+                    "img-box    img-box   img-box    img-box   img-box    img-box   img-box"   435px
+                    "empty-0    empty-0   empty-0    empty-0   empty-0    empty-0   empty-0"   30px
+                    "box-img1   empty1    box-img2   empty2    box-img3   empty3    box-img4" 90px/
+                    90px        25px      90px       25px      90px       25px      90px;
+    
 }
