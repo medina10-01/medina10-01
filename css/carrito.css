@@ -1,10 +1,13 @@
 .head{
     box-shadow: 1px, 0px, 1px black;
     display: grid;
-    grid-template: "empty-der  box-title        empty-cen       empty-center       empty-center      empty-hiz"30px
-                   "empty-der  box-title        box-info        empty              carrito           empty-hiz"50px
-                   "empty-der  box-title        box-info        borde-inferior     borde-inferior    empty-hiz"3px/
-                    1fr         37vh            100vh           250px              30px              1fr ; 
+    grid-template: "empty-der  box-title        empty-cen       empty-center       carrito             boom-img           empty-hiz"30px
+                   "empty-der  box-title        box-info        empty              carrito             boom-img           empty-hiz"40px
+                   "empty-der  box-title        box-info        borde-inferior     borde-inferior      borde-inferior     empty-hiz"3px/
+                    1fr         37vh            100vh           20px               70px                   64px               1fr ; 
+}
+.boom{
+    grid-area: boom-img;
 }
 .box-title{
     grid-area: box-title;
@@ -17,7 +20,10 @@
     padding-top: 15%;
 }
 .box-realizado{
+    margin-top: 13%;
     grid-area: carrito;
+    font-size: 6vh;
+    opacity: .8;
 }
 .borde-inferior{
     grid-area: borde-inferior;
@@ -234,7 +240,7 @@ img{
     display: grid;
     grid-template: "cart  empty exit"50px
                    "linea linea linea"1px/
-                    20px 1fr    20px;
+                    20px 1fr    29px;
 }
 .vacio{
     grid-area: vacio;
@@ -253,8 +259,9 @@ img{
     grid-area: linea;
 }
 .exit{
+    font-family: sans-serif;
     grid-area: exit;
-    font-size: 4vh;
+    font-size: 5vh;
     font-weight: 900;
     cursor: pointer;
 }

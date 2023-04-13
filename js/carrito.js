@@ -8,8 +8,6 @@ let imgMini2 = document.getElementById("imgMini2");
 let imgMini3 = document.getElementById("imgMini3");
 let imgMini4 = document.getElementById("imgMini4");
 
-
-
 imgMini1.addEventListener("click", function () {
     imgBox.setAttribute("src", ("img/image-product-1.jpg"));
     
