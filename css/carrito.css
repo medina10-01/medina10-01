@@ -35,18 +35,13 @@
     grid-area: box-info;
     border-bottom: 3px solid rgba(0, 0, 0, 0.5);
 }
-.opacy{
-    align-items: center;
-    opacity: .7;
-    cursor: pointer;
-    background-color: rgba(240, 248, 255, 0.959);
-}
 .opacity{
     opacity: .6;
     align-items: center;
     padding: 1px;
     font-size: 4vh;
     margin-left: 13px;
+    cursor: crosshair;
 }
 .opacity:hover{
     border-bottom: 5px solid rgb(255, 119, 0);
@@ -147,7 +142,7 @@ img{
     border-radius: 10px;
 }
 .opacy{
-    opacity: 0.9;
+    opacity: 0.5;
 }
 .info-des{
     display: flex;
@@ -310,21 +305,22 @@ img{
     display: none;
 }
 .img-body{
+    margin: 5px;
+    padding: 15px;
     position: absolute;
     top: 0%;
-    height: 100%;
+    height: auto;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.838);
     display: grid;
     grid-template:  "empty-l empty-c      empty-d" 0px
-                    "empty-l muestra      empty-d" auto/
+                    "empty-l muestra      empty-d" 100%/
                     1fr      40%           1fr;
 }
 .img-body-none{
     display: none;
 }
 .exit-body{
-    margin-top: 10px;
     grid-area: exit-body;
     color: rgb(255, 255, 255);
     font-size: 5vh;
