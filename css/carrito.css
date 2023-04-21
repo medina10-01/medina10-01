@@ -1,10 +1,17 @@
+*{
+    margin: 0%;
+    padding: 0cap;
+}
 .head{
     box-shadow: 1px, 0px, 1px black;
     display: grid;
-    grid-template: "empty-der  box-title        empty-cen       empty-center       empty-center      empty-hiz"30px
-                   "empty-der  box-title        box-info        empty              carrito           empty-hiz"50px
-                   "empty-der  box-title        box-info        borde-inferior     borde-inferior    empty-hiz"3px/
-                    1fr         37vh            100vh           250px              30px              1fr ; 
+    grid-template: "empty-der  box-title        empty-cen       empty-center       carrito             boom-img           empty-hiz"30px
+                   "empty-der  box-title        box-info        empty              carrito             boom-img           empty-hiz"60px
+                   "empty-der  box-title        box-info        borde-inferior     borde-inferior      borde-inferior     empty-hiz"3px/
+                    1fr         37vh            100vh           20px               90px                   64px               1fr ; 
+}
+.boom{
+    grid-area: boom-img;
 }
 .box-title{
     grid-area: box-title;
@@ -17,7 +24,10 @@
     padding-top: 15%;
 }
 .box-realizado{
+    margin-top: 13%;
     grid-area: carrito;
+    font-size: 6vh;
+    opacity: .8;
 }
 .borde-inferior{
     grid-area: borde-inferior;
@@ -30,31 +40,26 @@
     border-bottom: 3px solid rgba(0, 0, 0, 0.5);
 }
 .opacity{
+    opacity: .6;
     align-items: center;
-    height: 90%;
-    opacity: 0.6;
-    cursor: pointer;
-    margin: 0 9px;
+    padding: 1px;
+    font-size: 4vh;
+    margin-left: 13px;
+    cursor: crosshair;
 }
 .opacity:hover{
     border-bottom: 5px solid rgb(255, 119, 0);
 }
 .canasta{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 40px;
     height: 40px;
     border-radius: 40px;
 }
 .canasta-new{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 40px;
-    border: 2px solid orange;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 400px;
+    border: 5px solid rgb(255, 102, 0);
 }
 .title{
     text-align: center;
@@ -135,7 +140,7 @@ img{
     border-radius: 10px;
 }
 .opacy{
-    opacity: 0.9;
+    opacity: 0.5;
 }
 .info-des{
     display: flex;
@@ -165,7 +170,7 @@ img{
     align-items: center;
     text-align: center;
     font-weight: 800;
-    grid-template: "mas     numero menos add" auto/
+    grid-template: "menos  numero mas add" auto/
                     35px    50px   35px  1fr;
 }
 .mas, .menos{
@@ -215,12 +220,12 @@ img{
     font-weight: 700;
 }
 .list{
+    position: absolute;
+    top: 10%;
     display: grid;
     box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.42);
     padding: 10px;
-    position: absolute;
-    top: 100px;
-    right: 20px;
+    right: 100px;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
     grid-template:  "head-cart  head-cart   head-cart"  50px
@@ -232,9 +237,9 @@ img{
 .head-cart{
     grid-area: head-cart;
     display: grid;
-    grid-template: "cart  empty exit"50px
+    grid-template: "cart  empty exit"70px
                    "linea linea linea"1px/
-                    20px 1fr    20px;
+                    20px 1fr    59px;
 }
 .vacio{
     grid-area: vacio;
@@ -253,8 +258,9 @@ img{
     grid-area: linea;
 }
 .exit{
+    font-family: sans-serif;
     grid-area: exit;
-    font-size: 4vh;
+    font-size: 5vh;
     font-weight: 900;
     cursor: pointer;
 }
@@ -296,4 +302,54 @@ img{
 }
 .cart-body-hiden{
     display: none;
+}
+.img-body{
+    margin: 5px;
+    padding: 15px;
+    position: absolute;
+    top: 0%;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.838);
+    display: grid;
+    grid-template:  "empty-l empty-c      empty-d" 0px
+                    "empty-l muestra      empty-d" 100%/
+                    1fr      40%           1fr;
+}
+.img-body-none{
+    display: none;
+}
+.exit-body{
+    grid-area: exit-body;
+    color: rgb(255, 255, 255);
+    font-size: 5vh;
+}
+.box-body-img{
+    display: grid;
+    grid-area: muestra;
+    height: auto;
+    width: 100%;
+    grid-template:  "empty-he    empty-he   empty-he  empty-he   exit-body empty-hea  empty-hea empty-hea    empty-hea  "   60px
+                    "nex         img-box    img-box   img-box    img-box   img-box    img-box   img-box      before     "   450px
+                    "empty-0     empty-0    empty-0   empty-0    empty-0   empty-0    empty-0   empty-0      empty-0    "   30px
+                    "empty-bef   box-img1   empty1    box-img2   empty2    box-img3   empty3    box-img4     empty-nex  "   90px/
+                    29px         90px       25px      90px       25px      90px       25px      90px         29px        ;
+    
+}
+.nex{
+    font-size: 5vh;
+    grid-area: nex;
+    color: aliceblue;
+    z-index: 1;
+    position: relative;
+    top: 40%;
+}
+.before{
+    font-size: 5vh;
+    grid-area: before;
+    color: aliceblue;
+    z-index: 1;
+    position: relative;
+    right: 20px;
+    top: 170px;
 }

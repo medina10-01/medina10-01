@@ -27,23 +27,26 @@
                 <i class="fa-solid fa-cart-shopping"></i>
             </div>
         </div>
+        <div class="boom">
+            <img src="img/boom.png" alt="logo">
+        </div>
         <div class="log"></div>
     </div>
     <div class="box-main">
         <div class="img-box-main">
              <div  class="img-box"> 
-                <img id="imgBox"  class="img-box" src="img/image-product-1.jpg" alt="image-product-1">
+                <img id="imgBox"  class=" img-box" src="img/image-product-1.jpg" alt="image-product-1">
              </div> 
-            <div id="boxImg1" class="box-img1  border"> 
+            <div id="boxImg1" class=" box-img1  border"> 
                 <img id="imgMini1"  class="img-mini opacy" src="img/image-product-1-mini.jpg" alt="image-product-2">
             </div>
-            <div id="boxImg2" class="box-img2  noBorder">
+            <div id="boxImg2" class=" box-img2  noBorder">
                 <img id="imgMini2" class="img-mini" src="img/image-product-2-mini.jpg" alt="image-product-3">
             </div>
-            <div id="boxImg3" class="box-img3  noBorder">
+            <div id="boxImg3" class=" box-img3  noBorder">
                 <img id="imgMini3"  class="img-mini" src="img/image-product-3-mini.jpg" alt="image-product-3">
             </div>
-            <div id="boxImg4" class="box-img4  noBorder">
+            <div id="boxImg4" class=" box-img4  noBorder">
                 <img id="imgMini4" class="img-mini" src="img/image-product-4-mini.jpg" alt="image-product-4">
             </div> 
         </div>
@@ -58,31 +61,58 @@
                     <div class="descuento">50%</div>
                 </div>
                 <div class="valor-ini">250.00</div>
-
-                    <div id="boxTotal" class="total">Total: $0</div>
+                    <div class="total">
+                        <div id="boxTotal">Precio: $0</div>
+                        <div id="unidades">unidades: 0</div>
+                    </div>
+                    
                     <div class="carrito">
-                    <button id="menos" class="menos">-</button>
-                    <div class="numero"><span id="contador">0</span></div>
                     <button id="mas" class="mas">+</button>
+                    <div class="numero"><span id="contador">0</span></div>
+
+                    <button id="menos" class="menos">-</button>
                     <button id="boxCard" class="add"><div class="imag"><i class="fa-solid fa-cart-shopping"></i><span class="cart-add">add to cart</span></div></button>
                     </div>
+            </div>
+        </div>
+        <div class="cart-body-hiden" id="boxCompras">
+            <div class="head-cart">
+                <div class="cart">Carro</div>
+                <div class="exit" id="boxExit"><i class="fa-regular fa-circle-xmark"></i></div>
+                <div class="linea"></div>
+            </div>
+            <div id="boxEmpty" class="vacio">su carrito de compras está vacio.</div>
+            <div id="boxBody" class="cart-body-hiden">    
+                <div class="cart-img"><img src="img/image-product-1-thumbnail.webp" alt="img-Snakers"></div>
+                <div class="box-text-cart">fall limited Snakers Edition</div>
+                <div id="valorCart" class="valor-cart">125*0</div>
+                <div id="valorPago" class="valor-pago">000.00</div>
+                <div id="boxDelate" class="delate"><i class="fa-solid fa-trash-can"></i></div>
+            </div>
+            <button class="check">Checkout</button>
         </div>
     </div>
-    <div class="cart-body-hiden" id="boxCompras">
-        <div class="head-cart">
-            <div class="cart">Carro</div>
-            <div class="exit" id="boxExit">x</div>
-            <div class="linea"></div>
+    <div    id="imgBody" class="img-body-none">
+        <div class="box-body-img">
+            <div class="exit-body" id="bodyExit"><i class="fa-regular fa-circle-xmark"></i></div>
+            <div class="nex" id="btnNex"><i class="fa-solid fa-circle-chevron-left"></i></i></div>
+            <div class="before" id="btnBefore"><i class="fa-solid fa-circle-chevron-right"></i></i></div>
+            <div  class="img-box"> 
+                <img id="imgBoxBody"  class="img-box" src="img/image-product-1.jpg" alt="image-product-1">
+             </div> 
+            <div id="boxImgBody1" class="box-img1  border"> 
+                <img id="imgMiniBody1"  class="img-mini opacy" src="img/image-product-1-mini.jpg" alt="image-product-2">
+            </div>
+            <div id="boxImgBody2" class="box-img2  noBorder">
+                <img id="imgMiniBody2" class="img-mini" src="img/image-product-2-mini.jpg" alt="image-product-3">
+            </div>
+            <div id="boxImgBody3" class="box-img3  noBorder">
+                <img id="imgMiniBody3"  class="img-mini" src="img/image-product-3-mini.jpg" alt="image-product-3">
+            </div>
+            <div id="boxImgBody4" class="box-img4  noBorder">
+                <img id="imgMiniBody4" class="img-mini" src="img/image-product-4-mini.jpg" alt="image-product-4">
+            </div> 
         </div>
-        <div id="boxEmpty" class="vacio">su carrito de compras está vacio.</div>
-        <div id="boxBody" class="cart-body-hiden">    
-            <div class="cart-img"><img src="img/image-product-1-thumbnail.webp" alt="img-Snakers"></div>
-            <div class="box-text-cart">fall limited Snakers Edition</div>
-            <div id="valorCart" class="valor-cart">125*0</div>
-            <div id="valorPago" class="valor-pago">000.00</div>
-            <div id="boxDelate" class="delate"><i class="fa-solid fa-trash-can"></i></div>
-        </div>
-        <button class="check">Checkout</button>
     </div>
 </body>
 <script src="js/carrito.js"></script>
