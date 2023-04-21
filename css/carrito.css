@@ -108,11 +108,13 @@ img{
                    "box-img1   empty1    box-img2   empty2    box-img3   empty3    box-img4" 90px/
                    90px        25px      90px       25px      90px       25px      90px;
 }
+
 .img-box{
     grid-area: img-box;
     width: 100%;
     cursor: pointer;
 }
+    
 .img-mini{
     width: 100%;
     cursor: pointer;
@@ -330,26 +332,26 @@ img{
     height: auto;
     width: 100%;
     grid-template:  "empty-he    empty-he   empty-he  empty-he   exit-body empty-hea  empty-hea empty-hea    empty-hea  "   60px
-                    "nex         img-box    img-box   img-box    img-box   img-box    img-box   img-box      before     "   450px
+                    "before      img-box    img-box   img-box    img-box   img-box    img-box   img-box      nex        "   450px
                     "empty-0     empty-0    empty-0   empty-0    empty-0   empty-0    empty-0   empty-0      empty-0    "   30px
                     "empty-bef   box-img1   empty1    box-img2   empty2    box-img3   empty3    box-img4     empty-nex  "   90px/
-                    29px         90px       25px      90px       25px      90px       25px      90px         29px        ;
+                    47px         90px       25px      90px       25px      90px       25px      90px         47px        ;
     
 }
 .nex{
-    font-size: 5vh;
     grid-area: nex;
-    color: aliceblue;
-    z-index: 1;
     position: relative;
     top: 40%;
 }
 .before{
-    font-size: 5vh;
     grid-area: before;
+    position: relative;
+    right: 33px;
+    top: 170px;
+}
+.nex, .before{
+    font-size: 80px;
     color: aliceblue;
     z-index: 1;
-    position: relative;
-    right: 20px;
-    top: 170px;
+    cursor: pointer;
 }
