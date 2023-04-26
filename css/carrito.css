@@ -1,7 +1,4 @@
-*{
-    margin: 0%;
-    padding: 0cap;
-}
+
 .head{
     box-shadow: 1px, 0px, 1px black;
     display: grid;
@@ -306,8 +303,6 @@ img{
     display: none;
 }
 .img-body{
-    margin: 5px;
-    padding: 15px;
     position: absolute;
     top: 0%;
     height: 100vh;
@@ -355,3 +350,4 @@ img{
     z-index: 1;
     cursor: pointer;
 }
+

@@ -269,6 +269,5 @@ function cambio() {
     imagBody1();
   }
 }
-
 btnNex.addEventListener('click', imgNex);
 btnBefore.addEventListener('click',imgbefore);
