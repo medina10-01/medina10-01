@@ -32,8 +32,8 @@ h1{
     margin: 3px;
 }
 .ini{
-    grid-column-start: 4;
-    grid-column-end: 4;
+    grid-column-start:4;
+    grid-column-end: 5;
 }
 .center{
     display: flex;
