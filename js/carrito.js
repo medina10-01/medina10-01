@@ -136,10 +136,10 @@ boxCard.addEventListener('click', function () {
   if (valorContador != 0) {
     alert('Su pedido ha sido reservado con éxito. ¡Gracias por confiar en nosotros!')
     boxCanasta.classList.add("canasta-new");
+    
     boxBody.classList.add('cart-body');
     boxBody.classList.remove('cart-body-hiden');
     boxEmpty.classList.add('cart-body-hiden');
-    boxEmpty.classList.remove('span-vacio');
   }
   if(valorContador == 0){
     alert('su pedido es invalido intente nuevamente');
