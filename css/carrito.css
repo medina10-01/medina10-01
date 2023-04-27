@@ -113,6 +113,7 @@ img{
     grid-area: img-box;
     width: 100%;
     cursor: pointer;
+    transition: transform 9s ease-in-out;
 }
     
 .img-mini{
