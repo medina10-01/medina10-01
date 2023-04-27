@@ -156,7 +156,7 @@ let imgMinibody3 = document.getElementById("imgMiniBody3");
 let imgMinibody4 = document.getElementById("imgMiniBody4");
 let imgBody = document.getElementById('imgBody');
 let exitBOdy= document.getElementById('bodyExit');
-let contar =4;
+let contar =0;
 
 imgBox.addEventListener('click', function () {
   imgBody.classList.add('img-body');
@@ -167,21 +167,8 @@ exitBOdy.addEventListener('click', function () {
    imgBody.classList.add('img-body-none');
 });
 
-//espacio para la funcion de la animacion
-
-function animacion() {
-      if (imgBoxbody.classList.contains('animation')) {
-        imgBoxbody.classList.remove('animation');
-        imgBoxbody.classList.add('animation2');
-      }else{
-        imgBoxbody.classList.add('animation');
-        imgBoxbody.classList.remove('animation2');
-      };
-
-}
-
-function imagBody1() { 
-  animacion();
+function imagBody1() {
+  anime();
   imgBoxbody.setAttribute("src", ("img/image-product-1.jpg"));
   boxImgbody2.classList.remove("border");
   boxImgbody3.classList.remove("border");
@@ -196,7 +183,7 @@ function imagBody1() {
   contar= 4;
 };
 function imagBody2() {
-  animacion();
+  anime();
   imgBoxbody.setAttribute("src", ("img/image-product-2.jpg"));
   boxImgbody1.classList.remove("border");
   boxImgbody3.classList.remove("border");
@@ -212,7 +199,7 @@ function imagBody2() {
   contar= 1;
 };
 function imagBody3() {
-  animacion();
+  anime();
   imgBoxbody.setAttribute("src", ("img/image-product-3.jpg"));
   boxImgbody3.classList.add("border");
   boxImgbody2.classList.remove("border");
@@ -227,7 +214,7 @@ function imagBody3() {
   contar= 2;
 };
 function imagBody4() {
-  animacion();
+  anime();
   imgBoxbody.setAttribute("src", ("img/image-product-4.jpg"));
   boxImgbody4.classList.add("border");
   boxImgbody1.classList.remove("border");
@@ -249,6 +236,10 @@ imgMinibody4.addEventListener("click", imagBody4);
 
 let btnNex=document.querySelector('#btnNex');
 let btnBefore=document.querySelector('#btnBefore');
+
+function anime() {
+  imgBoxbody.classList.add('anime')
+}
 
 function imgNex() { 
   contar = contar +1;
