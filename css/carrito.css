@@ -70,14 +70,14 @@ body{
     margin-top: 2vh;
     display: grid;
     width: 100%;
-    grid-template:  "empty-a   img-box-main    conted      empty-f"/ 
-                    1fr        435px           50%         1fr;
+    grid-template:  "empty-a   img-box-main     emptycenter   conted      empty-f"/ 
+                    1fr        435px            50px          435px         1fr;
 }
 img{
     border-radius: 6px;
 }
 .conted{
-    padding: 0px 100px;
+    margin-top: 20px;
     grid-area: conted;
 }
 .t-orange{
@@ -331,11 +331,11 @@ img{
     grid-area: muestra;
     height: auto;
     width: 100%;
-    grid-template:  "empty-he    empty-he   empty-he  empty-he   exit-body empty-hea  empty-hea empty-hea    empty-hea  "   60px
-                    "before      img-box    img-box   img-box    img-box   img-box    img-box   img-box      nex        "   450px
+    grid-template:  "empty-he    empty-he   empty-he  empty-he   empty-he  empty-he   empty-he  exit-body   empty-hea  "   60px
+                    "before      img-box    img-box   img-box    img-box   img-box    img-box   img-box      nex        "   605px
                     "empty-0     empty-0    empty-0   empty-0    empty-0   empty-0    empty-0   empty-0      empty-0    "   30px
-                    "empty-bef   box-img1   empty1    box-img2   empty2    box-img3   empty3    box-img4     empty-nex  "   90px/
-                    47px         90px       25px      90px       25px      90px       25px      90px         47px        ;
+                    "empty-bef   box-img1   empty1    box-img2   empty2    box-img3   empty3    box-img4     empty-nex  "   100px/
+                    47px         100px      65px      100px      65px      100px      65px      100px         47px;
     
 }
 .btn-cambio{
