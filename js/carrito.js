@@ -156,7 +156,7 @@ let imgMinibody3 = document.getElementById("imgMiniBody3");
 let imgMinibody4 = document.getElementById("imgMiniBody4");
 let imgBody = document.getElementById('imgBody');
 let exitBOdy= document.getElementById('bodyExit');
-let contar =0;
+let contar =4;
 
 imgBox.addEventListener('click', function () {
   imgBody.classList.add('img-body');
