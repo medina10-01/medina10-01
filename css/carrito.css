@@ -356,36 +356,26 @@ img{
     cursor: pointer;
 }
 .animation{
-    animation: rotate 199ms normal;
+    animation: rotate 0.4s normal;
 }
 @keyframes rotate {
-    25%{
-        rotate: 22deg;
-    }
-    50%{
-        rotate: 45deg;
-    }
+
     75%{
-        rotate: 70deg;
+    transform: translateX(80px);
     }
     100%{
-        rotate: 90deg;
+    transform: translateX(160px);
     }
 }
 .animation2{
-    animation: rotate2 199ms normal;
+    animation: rotate2 0.4s normal;
 }
 @keyframes rotate2 {
-    25%{
-        rotate: -22deg;
-    }
-    50%{
-        rotate: -45deg;
-    }
+
     75%{
-        rotate: -70deg;
+    transform: translateX(40px);
     }
     100%{
-        rotate: -90deg;
+    transform: translateX(60px);
     }
 }
