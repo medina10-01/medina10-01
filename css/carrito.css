@@ -350,4 +350,37 @@ img{
     z-index: 1;
     cursor: pointer;
 }
-
+.animation{
+    animation: rotate 199ms normal;
+}
+@keyframes rotate {
+    25%{
+        rotate: 22deg;
+    }
+    50%{
+        rotate: 45deg;
+    }
+    75%{
+        rotate: 70deg;
+    }
+    100%{
+        rotate: 90deg;
+    }
+}
+.animation2{
+    animation: rotate2 199ms normal;
+}
+@keyframes rotate2 {
+    25%{
+        rotate: -22deg;
+    }
+    50%{
+        rotate: -45deg;
+    }
+    75%{
+        rotate: -70deg;
+    }
+    100%{
+        rotate: -90deg;
+    }
+}
