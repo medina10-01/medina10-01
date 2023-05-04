@@ -31,6 +31,7 @@ let img30 = document.getElementById('imag30');
 let img31 = document.getElementById('imag31');
 let img32 = document.getElementById('imag32');
 let img33 = document.getElementById('imag33');
+let img34 = document.getElementById('imag34')
 
 let boxEnlace = document.getElementById('boxEnlace');
 let boxEnlace2 = document.getElementById('boxEnlace2');
@@ -178,6 +179,15 @@ img12.addEventListener('click', function () {
     }
     enlace5.setAttribute('href', "img.html");
     enlace5.textContent = "Imagenes";
+    
+})
+img34.addEventListener('click', function () {
+    if (boxEnlace5.classList.contains('no-ver')) {
+        boxEnlace5.classList.remove('no-ver');
+        boxTitulo5.classList.add('no-ver');
+    }
+    enlace5.setAttribute('href', "slaideshow.html");
+    enlace5.textContent = "slaideshow";
     
 })
 img13.addEventListener('click', function () {
