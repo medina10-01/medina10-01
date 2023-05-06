@@ -56,12 +56,24 @@
 .img-lotus{
     grid-area: img-lotus;
     width: 100%;
-    animation: cambio 2s ease-in-out  0ms 1 normal none;
-}
-@keyframes cambio{
-    transform: translateX(40px);
 }
 .fa-solid{
     position: relative;
     top: 45%;
+}
+.animation{
+    animation: cambio 0.5s ease-in;
+}
+@keyframes cambio {
+    100%{
+        transform: translateX(100px);
+    }
+}
+.animation2{
+    animation: cambio2 0.5s ease-in;
+}
+@keyframes cambio2 {
+    100%{
+        transform: translateX(100px);
+    }
 }

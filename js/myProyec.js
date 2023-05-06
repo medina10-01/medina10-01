@@ -1,3 +1,4 @@
+alert ('Por favor, seleccione la página que desea ver. Al hacer clic, el título cambiará de color. Haga clic en el título para acceder al enlace. Gracias por su visita.')
 let img1 = document.getElementById('imag1');
 let img2 = document.getElementById('imag2');
 let img3 = document.getElementById('imag3');
@@ -186,7 +187,7 @@ img34.addEventListener('click', function () {
         boxEnlace5.classList.remove('no-ver');
         boxTitulo5.classList.add('no-ver');
     }
-    enlace5.setAttribute('href', "slaideshow.html");
+    enlace5.setAttribute('href', "slader.html");
     enlace5.textContent = "slaideshow";
     
 })
