@@ -66,7 +66,7 @@
 }
 @keyframes cambio {
     100%{
-        transform: translateX(100px);
+        transform: translateX(-100vh);
     }
 }
 .animation2{
@@ -74,6 +74,6 @@
 }
 @keyframes cambio2 {
     100%{
-        transform: translateX(100px);
+        transform: translateX(-100vh);
     }
 }
