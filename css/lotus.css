@@ -9,17 +9,17 @@
     height: 60px;
 }
 .logo-lotus{
-    margin-left:  63px;
+    margin-left:  3px;
     position: absolute;
     border-radius: 10px;
 }
 .main_conted{
     display: grid;
     grid-template:  
-                    'empty_left     before      nav-lotus   nex   empty_right'
-                    'empty_left     img-lotus   img-lotus   img-lotus   empty_right'
-                    'empty_left     text        text        text        empty_right'/
-                    1fr             1px         900px      1px         1fr;
+                    'empty_left    nav-lotus    empty_right'
+                    'empty_left    img-lotus    empty_right'
+                    'empty_left    text         empty_right'/
+                    1fr            900px        1fr;
 }
 .empty_right{
     background-color: gray;
@@ -62,18 +62,21 @@
     grid-area: text;
     height: 100vh;
 }
-.top{
-    margin-left: 50%;
-    position: absolute;
-    color: white;
-    top: 600px;
+.before{
+    width: fit-content;
+    position: relative;
+    color: rgb(222, 9, 9);
+    font-size: 60px;
+    bottom: 1400%;
+    right: 8%;
+    background-color: gray;
 }
 .nex{
-    left: 700px;
+    width: fit-content;
+    position: relative;
+    color: rgb(222, 9, 9);
     font-size: 60px;
+    bottom:  1400%;
+    left: 490%;
+    background-color: gray;
 }
-.before{
-    right: 1550px;
-    font-size: 60px;
-}
-
