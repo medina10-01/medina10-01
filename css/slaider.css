@@ -9,10 +9,12 @@
                     1fr          900px             1fr;
 }
 .empty-l{
+    z-index: 1;
     grid-area: empty-l;
     background-color: gray;
 }
 .empty-r{
+    z-index: 1;
     grid-area: empty-r;
     background-color: gray;
 }
@@ -50,30 +52,31 @@
     right: 40px;
     grid-area: nex;
     font-size: 40px;
-    color: white;
+    color: rgb(188, 188, 188);
     
 }
 .img-lotus{
+    position: relative;
     grid-area: img-lotus;
     width: 100%;
+    left: 0;
+    transition: left 2s;
+}
+.img-lotus-before{
+    position: relative;
+    grid-area: img-lotus;
+    width: 100%;
+    left: -100%;
+    transition: left 2s;
+}
+.img-lotus-before2{
+    position: relative;
+    grid-area: img-lotus;
+    width: 100%;
+    left: 100%;
+    transition: left 2s;
 }
 .fa-solid{
     position: relative;
     top: 45%;
-}
-.animation{
-    animation: cambio 0.5s ease-in;
-}
-@keyframes cambio {
-    100%{
-        transform: translateX(-100vh);
-    }
-}
-.animation2{
-    animation: cambio2 0.5s ease-in;
-}
-@keyframes cambio2 {
-    100%{
-        transform: translateX(-100vh);
-    }
 }
