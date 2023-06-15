@@ -9,12 +9,18 @@
                     1fr          900px             1fr;
 }
 .empty-l{
+<<<<<<< HEAD
     z-index: 1;
+=======
+>>>>>>> b78f189c06bf85592115dee5b602813505b357f5
     grid-area: empty-l;
     background-color: gray;
 }
 .empty-r{
+<<<<<<< HEAD
     z-index: 1;
+=======
+>>>>>>> b78f189c06bf85592115dee5b602813505b357f5
     grid-area: empty-r;
     background-color: gray;
 }
@@ -44,7 +50,11 @@
 .before{
     grid-area: before;
     font-size: 40px;
+<<<<<<< HEAD
     color: black;
+=======
+    color: white;
+>>>>>>> b78f189c06bf85592115dee5b602813505b357f5
     background-color: gray;
 }
 .nex{
@@ -56,17 +66,23 @@
     
 }
 .img-lotus{
+<<<<<<< HEAD
     position: relative;
     grid-area: img-lotus;
     width: 100%;
     left: 0;
     transition:left 0.5s;
+=======
+    grid-area: img-lotus;
+    width: 100%;
+>>>>>>> b78f189c06bf85592115dee5b602813505b357f5
 }
 .fa-solid{
     position: relative;
     top: 45%;
 }
 .animation{
+<<<<<<< HEAD
     position: relative;
     grid-area: img-lotus;
     width: 100%;
@@ -81,6 +97,9 @@
 /* .animation{
     animation: cambio 0.5s ease-in;
     left: -100vh;
+=======
+    animation: cambio 0.5s ease-in;
+>>>>>>> b78f189c06bf85592115dee5b602813505b357f5
 }
 @keyframes cambio {
     100%{
@@ -89,12 +108,16 @@
 }
 .animation2{
     animation: cambio2 0.5s ease-in;
+<<<<<<< HEAD
     left: -100vh;
+=======
+>>>>>>> b78f189c06bf85592115dee5b602813505b357f5
 }
 @keyframes cambio2 {
     100%{
         transform: translateX(-100vh);
     }
+<<<<<<< HEAD
 }
 .animation{
     animation: cambio 0.5s ease-in;
@@ -114,3 +137,6 @@
         transform: translateX(-100vh);
     }
 } */
+=======
+}
+>>>>>>> b78f189c06bf85592115dee5b602813505b357f5

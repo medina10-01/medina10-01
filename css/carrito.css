@@ -362,7 +362,7 @@ img{
     }
 }
 .animation2{
-    animation: rotate2 199ms normal;
+    animation: rotate2 0.4s normal;
 }
 @keyframes rotate2 {
     75%{
