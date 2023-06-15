@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.head{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(77, 146, 20);
+    display: grid;
+    grid-template: "hambur        empty-l         logo          empty-h         user" auto/
+                    40px          1fr             400px         1fr             100px;
+}
+.menu-hamb{
+    grid-area: hambur;
+    font-size: 50px;
+    position: relative;
+    top: 25%;
+    left: 45%;
+    color: rgb(71, 71, 71);
+}
+.logo{
+    grid-area: logo;
+    font-size: 2.5vh;
+    color: white;
+    font-family: Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    background-color: brown;
+    text-align: center;
+}
+.user-data{
+    grid-area: user;
+    font-size: 2.5vh;
+    color: white;
+    font-family: fantasy;
+    font-style: italic;
+    font-weight: 200;
+    background-color: rgb(15, 170, 205);
+    text-align: center;
+}
+.menu-container{
+    width: fit-content;
+    padding-left: 10px;
+    height: 100vh;
+    background-color: rgb(237, 237, 237);
+    display: grid;
+    grid-template:  "empty-h"   130px
+                    "inventario"60px
+                    "movimiento"60px
+                    "reporte"   60px
+                    "caducar"   60px
+                    "empty"     0.95fr
+                    "lengua"    60px
+                    "mod-noc"   60px/
+                    1fr;
+}
+.items{
+    padding-right: 20px;
+    border-bottom: 1px solid ;
+    font-size: 40px;
+}
+.inventario{
+    position: relative;
+    grid-area: inventario;
+}
+.movimiento{
+    grid-area: movimiento;
+}
+.reporte{
+    grid-area: reporte;
+}
+.caducar{
+    grid-area: caducar;
+}
+.lengua{
+    grid-area: lengua;
+}
+.mod-noc{
+    grid-area: mod-noc;
+}
+.delate{
+    display: none;
+}
+.visible{
+    display: block;
+}
