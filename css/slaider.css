@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box-container{
+    display: grid;
+    grid-template: "empty-l      main-menu       empty-r"
+                   "empty-l      container-img   empty-r"/
+                    1fr          900px             1fr;
+}
+.empty-l{
+<<<<<<< HEAD
+    z-index: 1;
+=======
+>>>>>>> b78f189c06bf85592115dee5b602813505b357f5
+    grid-area: empty-l;
+    background-color: gray;
+}
+.empty-r{
+<<<<<<< HEAD
+    z-index: 1;
+=======
+>>>>>>> b78f189c06bf85592115dee5b602813505b357f5
+    grid-area: empty-r;
+    background-color: gray;
+}
+.main-menu{
+    grid-area: main-menu;
+    display: inline-flex;
+    justify-content: right;
+}
+.img-logo{
+    margin-right: 55px;
+}
+.style-items{
+    text-decoration: none;
+    color: rgb(243, 78, 1);
+    margin-left: 5px;
+    height: 100%;
+    cursor: pointer;
+    font-size: 30px;
+    background-color: aliceblue;
+}
+.container-img{
+    grid-area: container-img;
+    display: grid;
+    grid-template: "before      img-lotus       nex"/
+                    0px         900px           0px ;
+}
+.before{
+    grid-area: before;
+    font-size: 40px;
+<<<<<<< HEAD
+    color: black;
+=======
+    color: white;
+>>>>>>> b78f189c06bf85592115dee5b602813505b357f5
+    background-color: gray;
+}
+.nex{
+    position: relative;
+    right: 40px;
+    grid-area: nex;
+    font-size: 40px;
+    color: white;
+    
+}
+.img-lotus{
+<<<<<<< HEAD
+    position: relative;
+    grid-area: img-lotus;
+    width: 100%;
+    left: 0;
+    transition:left 0.5s;
+=======
+    grid-area: img-lotus;
+    width: 100%;
+>>>>>>> b78f189c06bf85592115dee5b602813505b357f5
+}
+.fa-solid{
+    position: relative;
+    top: 45%;
+}
+.animation{
+<<<<<<< HEAD
+    position: relative;
+    grid-area: img-lotus;
+    width: 100%;
+    left: 100%;
+    transition:left 0.5s;
+}
+
+
+
+
+
+/* .animation{
+    animation: cambio 0.5s ease-in;
+    left: -100vh;
+=======
+    animation: cambio 0.5s ease-in;
+>>>>>>> b78f189c06bf85592115dee5b602813505b357f5
+}
+@keyframes cambio {
+    100%{
+        transform: translateX(-100vh);
+    }
+}
+.animation2{
+    animation: cambio2 0.5s ease-in;
+<<<<<<< HEAD
+    left: -100vh;
+=======
+>>>>>>> b78f189c06bf85592115dee5b602813505b357f5
+}
+@keyframes cambio2 {
+    100%{
+        transform: translateX(-100vh);
+    }
+<<<<<<< HEAD
+}
+.animation{
+    animation: cambio 0.5s ease-in;
+    left: -100vh;
+}
+@keyframes cambio {
+    100%{
+        transform: translateX(-100vh);
+    }
+}
+.animation2{
+    animation: cambio2 0.5s ease-in;
+    left: -100vh;
+}
+@keyframes cambio2 {
+    100%{
+        transform: translateX(-100vh);
+    }
+} */
+=======
+}
+>>>>>>> b78f189c06bf85592115dee5b602813505b357f5

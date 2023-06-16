@@ -1,3 +1,4 @@
+alert ('Por favor, seleccione la página que desea ver. Al hacer clic, el título cambiará de color. Haga clic en el título para acceder al enlace. Gracias por su visita.')
 let img1 = document.getElementById('imag1');
 let img2 = document.getElementById('imag2');
 let img3 = document.getElementById('imag3');
@@ -31,6 +32,7 @@ let img30 = document.getElementById('imag30');
 let img31 = document.getElementById('imag31');
 let img32 = document.getElementById('imag32');
 let img33 = document.getElementById('imag33');
+let img34 = document.getElementById('imag34')
 
 let boxEnlace = document.getElementById('boxEnlace');
 let boxEnlace2 = document.getElementById('boxEnlace2');
@@ -178,6 +180,15 @@ img12.addEventListener('click', function () {
     }
     enlace5.setAttribute('href', "img.html");
     enlace5.textContent = "Imagenes";
+    
+})
+img34.addEventListener('click', function () {
+    if (boxEnlace5.classList.contains('no-ver')) {
+        boxEnlace5.classList.remove('no-ver');
+        boxTitulo5.classList.add('no-ver');
+    }
+    enlace5.setAttribute('href', "slader.html");
+    enlace5.textContent = "slaideshow";
     
 })
 img13.addEventListener('click', function () {

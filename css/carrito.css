@@ -1,9 +1,4 @@
-*{
-    padding: 0px;
-}
-body{
-    padding: 19px;
-}
+
 .head{
     box-shadow: 1px, 0px, 1px black;
     display: grid;
@@ -359,36 +354,24 @@ img{
     cursor: pointer;
 }
 .animation{
-    animation: rotate 199ms normal;
+    animation: rotate 299ms normal;
 }
 @keyframes rotate {
-    25%{
-        rotate: 22deg;
-    }
-    50%{
-        rotate: 45deg;
-    }
     75%{
-        rotate: 70deg;
+        transform: translateX(40px);
     }
     100%{
-        rotate: 90deg;
+        transform: translateX(100px);
     }
 }
 .animation2{
-    animation: rotate2 199ms normal;
+    animation: rotate2 0.4s normal;
 }
 @keyframes rotate2 {
-    25%{
-        rotate: -22deg;
-    }
-    50%{
-        rotate: -45deg;
-    }
     75%{
-        rotate: -70deg;
+        transform: translateX(40px);
     }
     100%{
-        rotate: -90deg;
+        transform: translateX(100px);
     }
 }
