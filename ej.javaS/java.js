@@ -1,3 +1,9 @@
+// limitaciones para declaracion de variables
+// 1. no iniciar con numero
+// 2. los nombres de variables no llevan espacios
+// 3. la declaracion de variables no llevan commillas ni caracteres especiales (-,*,\)
+// 4. no podemos declarar bariables con nombres restringidos(que son de uso interno del lenguaje)
+
 
 // ejercicio 1
 // el siguiente codigo una ves se ejecuta una ves cargue el documento html
@@ -68,8 +74,28 @@ console.log('convercion de decimal a entero con ajuste hacia el piso');
 let num6int = Math.floor(num6float);
 console.log(num6float);
 
-// limitaciones para declaracion de variables
-// 1. no iniciar con numero
-// 2. los nombres de variables no llevan espacios
-// 3. la declaracion de variables no llevan commillas ni caracteres especiales (-,*,\)
-// 4. no podemos declarar bariables con nombres restringidos(que son de uso interno del lenguaje)
+
+// para solucionar el problema del lenguaje debimente tipado podemos utlizar typescript
+
+
+console.log('operadores Aritméticos: ');
+let numArit1 = 9;
+let numArit2 = 6;
+console.log('suma');
+console.log('suma numArit1(9) + numArit2(6)  ='+ (numArit1+numArit2));
+console.log('resta');
+console.log('resta numArit2(6) * numArit1(9) =  '+(numArit2-numArit1));
+console.log('multiplicacion');
+console.log('multiplicacion numArit1(9) * numArit2(6) = '+(numArit1+numArit2));
+console.log('divicion');
+console.log('dividir numArit1(9) / numArit2(6) =  '+(numArit1/numArit2));
+let resulDiv = numArit1/numArit2
+console.log('redondear numros');
+console.log('redondear segun promedio');
+console.log(Math.round(resulDiv));
+console.log('obtener el residuo de una div');
+console.log('residuo = numArit1(9) % numArit2(6)  =  '+(numArit1%numArit2));
+
+// redondear hacia arriba::::Math.ceil(name);
+// redondear hacia abajo:::::Math.floor(name);
+// redondear segun promedio::Math.round(name);
