@@ -3,7 +3,14 @@
     padding: 0;
     box-sizing: border-box;
   }
-  html, body {
+  body{
+    background-image: url(/img/imagen\ para\ fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+
+  /* html, body {
     height: 100%;
   }
   body {
@@ -83,7 +90,7 @@
     100% {
       top: 110%;
     }
-  }
+  } */
 .main-box{
     display: flex;
     justify-content: center;
@@ -91,7 +98,7 @@
     height: 100vh;
 }
 .container{
-    background-color: #000000;
+    background-color: #000000a1;
     border: 5px solid;
     width: fit-content;
     border-radius: 30px;
@@ -119,7 +126,7 @@
     border-bottom: 6px double ;
 }
 .title{
-    color: rgb(106, 134, 134);
+    color: rgb(156, 156, 156);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size:5vh;
     font-weight: 900;
@@ -133,7 +140,7 @@
 .items{
     display: inline-flex;
     height: 40px;
-    width: 160px;
+    width: fit-content;
     justify-content: center;
     align-items: center;
     border-bottom: 3px double slategrey;
@@ -146,13 +153,20 @@ a{
     text-decoration: none;
 }
 .me1, .me3{
-  color: #434343;
+  color: #030303;
+  font-weight: 900;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.9em;
 }
 .me2{
-  color: goldenrod;
+  color: rgb(142, 120, 9);
+  font-weight: 900;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.9em;
+  font-style: oblique;
 }
 .items:hover{
-    background-color: #5a5a5a48;
+    background-color: #5a5a5add;
     border-top: 3px  solid;
     border-bottom: 3px solid;
     transform: scale(1.1);
