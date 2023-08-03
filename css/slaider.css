@@ -10,11 +10,11 @@
 }
 .empty-l{
     z-index: 1;
+    z-index: 1;
     grid-area: empty-l;
     background-color: gray;
 }
 .empty-r{
-    z-index: 1;
     grid-area: empty-r;
     background-color: gray;
 }
@@ -44,7 +44,7 @@
 .before{
     grid-area: before;
     font-size: 40px;
-    color: white;
+    color: black;
     background-color: gray;
 }
 .nex{
@@ -56,27 +56,26 @@
     
 }
 .img-lotus{
-    position: relative;
     grid-area: img-lotus;
     width: 100%;
-    left: 0;
-    transition: left 2s;
-}
-.img-lotus-before{
-    position: relative;
-    grid-area: img-lotus;
-    width: 100%;
-    left: -100%;
-    transition: left 2s;
-}
-.img-lotus-before2{
-    position: relative;
-    grid-area: img-lotus;
-    width: 100%;
-    left: 100%;
-    transition: left 2s;
 }
 .fa-solid{
     position: relative;
     top: 45%;
+}
+.animation{
+    animation: cambio 0.5s ease-in;
+}
+@keyframes cambio {
+    100%{
+        transform: translateX(-100vh);
+    }
+}
+.animation2{
+    animation: cambio2 0.5s ease-in;
+}
+@keyframes cambio2 {
+    100%{
+        transform: translateX(-100vh);
+    }
 }

@@ -9,7 +9,6 @@ function sumar() {
         contador =1;
     }
     anime();
-    anime2();
 }
 function restar() {
     contador--
@@ -17,7 +16,6 @@ function restar() {
         contador = 3;
     }
     anime();
-    anime2();
 }
 
 function anime() {
@@ -25,8 +23,8 @@ function anime() {
         contimg.classList.add('img-lotus-before')
         contimg.classList.remove('img-lotus')
     }else{
-        contimg.classList.remove('img-lotus-before')
-        contimg.classList.add('img-lotus')
+        contimg.classList.remove('animation2');
+        contimg.classList.add('animation');
     }
     if (contimg.classList.contains('img-lotus-before')) {
         setTimeout(() => {
@@ -50,13 +48,14 @@ function anime2() {
 }
 function proyectar() {
     if (contador == 3) {
-        img1();
+
+        contimg.setAttribute('src', ('img/lotus (1).webp'));
     }
     if (contador == 1) {
-        img2();
+        contimg.setAttribute('src', ('img/lotus (2).webp'));
     }
     if (contador == 2) {
-        ima3();
+        contimg.setAttribute('src', ('img/lotus (3).webp'));
     }
 }
 function proyectar2() {
@@ -85,9 +84,7 @@ function imgn2() {
 function ima3() {
     contimg.setAttribute('src', ('img/lotus (3).webp'));
 }
-function imgn3() {
-    imgNex.setAttribute('src', ('img/lotus (3).webp'));
-}
+
 
 btnbefore.addEventListener('click', restar);
 bntnet.addEventListener('click', sumar);

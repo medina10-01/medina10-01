@@ -137,7 +137,7 @@ img{
     border-radius: 10px;
 }
 .opacy{
-    opacity: 0.5;
+    opacity: 0.4;
 }
 .info-des{
     display: flex;
@@ -167,8 +167,8 @@ img{
     align-items: center;
     text-align: center;
     font-weight: 800;
-    grid-template: "menos  numero mas add" auto/
-                    35px    50px   35px  1fr;
+    grid-template: "menos   numero      mas     add" auto/
+                    35px    50px        35px    1fr;
 }
 .mas, .menos{
     border: none;
