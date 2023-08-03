@@ -45,3 +45,8 @@
                         1fr;
     }
 }
+body{
+    background-image: url(/img/fondo.jpg);
+    width: 100vh;
+    height: 100vh;
+}

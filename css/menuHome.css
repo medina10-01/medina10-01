@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    border-bottom: 1px solid rgb(170, 170, 170);
+    padding: 10px 0px 10px 0px;
+    display: grid;
+    gap: 1px;
+    grid-template: "empty-l     img-log     glass       location    shop    user    empty-r"50px/
+                    0.4fr       210px       1fr         190px       70px    100px   0.4fr;
+}
+.img_log{
+    grid-area: img-log;
+}
+.img2{display: none;}
+.glass{
+    padding-left: 5px;
+    border-radius: 13px;
+    border: 1px solid black;
+    grid-area: glass;
+
+}
+.imag2{
+    display: none;
+}
+.location{ 
+    margin-left: 9px;
+    display: flex;
+    align-items: center;
+    grid-area: location;
+}
+.shop{
+    display: flex;
+    align-items: center;
+    grid-area: shop;
+}
+.valor_cart{
+    border-radius: 100vh;
+    width: 50px;
+    height: 40px;
+    color: white;
+    background-color: rgb(255, 0, 0);
+    font-size: 2em;
+}
+.user{
+    align-items: center;
+    display: flex;
+    grid-area: user;
+}
+
+.textt{
+    margin-top: 5px;
+    height: 40px;
+    width: 90%;
+    border: none;
+    grid-area: space-text;
+}
+.textt:focus {
+    outline: none;
+}
+.menu{
+    grid-area: menu;
+    display: none;
+}
+.fa-location-dot, .fa-cart-plus, .fa-user{
+    font-size: 35px;
+}
+@media only screen and (max-width:950px) {
+    .container{
+        border-bottom: 1px solid rgb(170, 170, 170);
+        padding: 10px 0px 10px 0px;
+        display: grid;
+        gap: 1px;
+        grid-template: "menu    img-log     glass       shop    user    "60px/
+                        50px    80px        1fr         60px    70px;
+    }
+    .location, .people{
+        display: none;
+    }
+    .shop{
+        margin-left: 9px;
+    }
+    .img1{
+        display: none;
+    }
+    .img2{
+        display: block;
+    }
+    .menu{
+        margin-top: 5px;
+        margin-left: 5px;
+        display: block;
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width:470px) {
+    .container{
+        border-bottom: 1px solid rgb(170, 170, 170);
+        padding: 10px 0px 10px 0px;
+        display: grid;
+        gap: 1px;
+        grid-template: "menu    img-log     glass       shop    user    "60px/
+                        50px    80px       1fr         60px    70px;
+    }
+    .location, .people{
+        display: none;
+    }
+    .img1{
+        display: none;
+    }
+    .img2{
+        display: block;
+    }
+    .menu{
+        margin-top: 5px;
+        margin-left: 5px;
+        display: block;
+        font-size: 40px;
+    }
+    .textt{
+      display: none;
+    }
+    .glass{
+        display: flex;
+        align-items: center;
+        border: none;
+        display: flex;
+        justify-content: right;
+        padding-right: 10px;
+    }
+    .fa-magnifying-glass{
+        font-size: 30px;
+    }
+}
+
