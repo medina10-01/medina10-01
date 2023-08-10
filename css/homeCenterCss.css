@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@media only screen and (min-width: 1021px){
+.container{
+    gap: 0px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template: "empty-l         house       glass       ubication           shop        points        user      empty-h" 75px/
+                    0.1fr           220px        1fr        250px               70px        130px        70px       0.1fr;
+}
+.bars{
+display: none;
+}
+.house{
+    grid-area: house;  
+}
+.imgHome{
+    display: none;
+}
+.cmr-img{
+    width: 40px;
+}
+.glass{
+    grid-area: glass;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 13px;
+}
+.ubication{
+    grid-area: ubication;
+}
+.lol-txt{
+    font-size: 20px;
+}
+.city{
+    color: blue;
+}
+.car-shop{
+    grid-area: shop;
+}
+.cmrPoints{
+    grid-area: points;
+    display: flex;
+}
+.user{
+    grid-area: user;
+}
+.bars, .glass, .car-shop, .user, .ubication{
+    font-size: 35px;
+    text-align: center;
+}
+.none{
+    display: none;
+}
+.find{
+
+    gap: 0px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template: "glass2      space-text      exit"50px/
+                    30px        1fr             30px;
+}
+.glass2{
+    grid-area: glass2;
+    margin-left: 5px;
+}
+.pace-text{
+    grid-area: space-text;
+}
+.exit{
+    grid-area: exit;
+}
+.find-text{
+    border: none;
+}
+.find-text:focus{
+    outline: none;
+}  
+}
+@media only screen and (min-width: 770px) and (max-width: 1020px) {
+    .img-remove{
+        display: none;
+    }
+.container{
+    gap: 0px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template: "bars        house       glass       shop        points        user" 75px/
+                    70px        70px        1fr        70px        130px        70px;
+}
+.bars{
+    margin-left: 3px;
+    grid-area: bars;
+}
+.house{
+    grid-area: house;  
+}
+.imgHome, .cmr-img{
+    width: 40px;
+}
+.glass{
+    grid-area: glass;
+    border: 1px solid black;
+    border-radius: 13px;
+}
+.car-shop{
+    grid-area: shop;
+}
+.cmrPoints{
+    grid-area: points;
+    display: flex;
+}
+.user{
+    grid-area: user;
+}
+.bars, .glass, .car-shop, .user{
+    font-size: 35px;
+    text-align: center;
+}
+.none{
+    display: none;
+}
+.find{
+
+    gap: 0px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template: "glass2      space-text      exit"50px/
+                    30px        1fr             30px;
+}
+.glass2{
+    grid-area: glass2;
+    margin-left: 5px;
+}
+.pace-text{
+    grid-area: space-text;
+}
+.exit{
+    grid-area: exit;
+}
+.find-text{
+    border: none;
+}
+.find-text:focus{
+    outline: none;
+}
+}
+@media only screen and (min-width:0px) and (max-width: 770px) {
+    .img-remove{
+        display: none;
+    }
+    .remove{
+        display: none;
+    }
+    .container{
+        gap: 0px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template: "bars        house       glass       shop        user" 75px/
+                        70px        70px        1fr        70px        70px;
+    }
+    .bars{
+        margin-left: 3px;
+        grid-area: bars;
+    }
+    .house{
+        grid-area: house;  
+    }
+    .imgHome{
+        width: 40px;
+    }
+    .glass{
+        grid-area: glass;
+    border: 1px solid black;
+    border-radius: 13px;
+    }
+    .car-shop{
+        grid-area: shop;
+    }
+    .user{
+        grid-area: user;
+    }
+    .bars, .glass, .car-shop, .user{
+        font-size: 35px;
+        text-align: center;
+    }
+    .none{
+        display: none;
+    }
+    .find{
+    
+        gap: 0px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template: "glass2      space-text      exit"50px/
+                        30px        1fr             30px;
+    }
+    .glass2{
+        grid-area: glass2;
+        margin-left: 5px;
+    }
+    .pace-text{
+        grid-area: space-text;
+    }
+    .exit{
+        grid-area: exit;
+    }
+    .find-text{
+        border: none;
+    }
+    .find-text:focus{
+        outline: none;
+    }
+}
