@@ -175,8 +175,6 @@ display: none;
     }
     .glass{
         grid-area: glass;
-    border: 1px solid black;
-    border-radius: 13px;
     }
     .car-shop{
         grid-area: shop;
