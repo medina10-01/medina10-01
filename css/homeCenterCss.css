@@ -8,8 +8,8 @@
     display: grid;
     align-items: center;
     justify-content: center;
-    grid-template: "empty-l         house       glass       ubication           shop        points        user      empty-h" 75px/
-                    0.3fr           220px        1fr        250px               70px        130px        70px       0.3fr;
+    grid-template: "empty-l         house       glass                  shop        points        user      empty-h" 75px/
+                    0.3fr           220px        1fr                   70px        130px        70px       0.3fr;
 }
 .bars{
 display: none;
