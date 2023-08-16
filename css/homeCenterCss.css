@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
     grid-template: "empty-l         house       glass       ubication           shop        points        user      empty-h" 75px/
-                    0.1fr           220px        1fr        250px               70px        130px        70px       0.1fr;
+                    0.3fr           220px        1fr        250px               70px        130px        70px       0.3fr;
 }
 .bars{
 display: none;
@@ -34,9 +34,6 @@ display: none;
 }
 .lol-txt{
     font-size: 20px;
-}
-.city{
-    color: blue;
 }
 .car-shop{
     grid-area: shop;
