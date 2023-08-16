@@ -8,14 +8,15 @@
     display: grid;
     align-items: center;
     justify-content: center;
-    grid-template: "empty-l         house       glass       ubication           shop        points        user      empty-h" 75px/
-                    0.3fr           220px        1fr        250px               70px        130px        70px       0.3fr;
+    grid-template: "empty-l         house       glass         locat         shop        points        user      empty-h" 75px/
+                    0.2fr           210px        1fr          200px         70px        130px        70px       0.2fr;
 }
 .bars{
 display: none;
 }
 .house{
     grid-area: house;  
+
 }
 .imgHome{
     display: none;
@@ -29,11 +30,19 @@ display: none;
     border: 1px solid black;
     border-radius: 13px;
 }
-.ubication{
-    grid-area: ubication;
+.fa-location-dot{
+    position: relative;
+    top: 10px;
 }
-.lol-txt{
-    font-size: 20px;
+.locat{
+    grid-area: locat;
+    position: relative;
+    left: 20px;
+}
+.locate{
+    position: relative;
+    left: 27px;
+    color: blue;
 }
 .car-shop{
     grid-area: shop;
@@ -45,7 +54,7 @@ display: none;
 .user{
     grid-area: user;
 }
-.bars, .glass, .car-shop, .user, .ubication{
+.bars, .glass, .car-shop, .user, .fa-location-dot{
     font-size: 35px;
     text-align: center;
 }
@@ -175,8 +184,6 @@ display: none;
     }
     .glass{
         grid-area: glass;
-    border: 1px solid black;
-    border-radius: 13px;
     }
     .car-shop{
         grid-area: shop;
