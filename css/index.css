@@ -18,12 +18,13 @@
     width: 100%;
     display: grid;
     grid-template:
-                  'empty-l    text      text         foto          empty-r'
-                  1fr         200px     350px       300px          1fr;
+                  'empty-l    text      foto         empty-r'100vh/
+                  100px       1fr       0.5fr        100px;
   }
   .info {
+    display: grid;
+    align-items: center;
     grid-area: text;
-    width: fit-content;
   }
 
   .infoDiv{
@@ -43,12 +44,14 @@
   
   .foto {
     grid-area: foto;
-    background-color: #f90047;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .imgFoto {
     border-radius: 59px;
-    width: 350px;
+    width: 450px;
   }
   
   .name {
@@ -62,7 +65,7 @@
   .title {
     color: #fefefe; /* Naranja suave */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 6vh;
+    font-size: 10vh;
     font-weight: 900;
   }
   
@@ -85,9 +88,10 @@
   }
   
   .items{
-    margin-top: 30px;
-    width: 40%;
+    text-align: center;
+    width: 200px;
       display: inline-flex;
+      justify-content: center;
       height: 40px;
       border-bottom: 3px double rgb(100, 166, 2);
       border-radius: 13px;
@@ -104,8 +108,6 @@
 }
 
 @media only  screen and (max-width: 1050px){
-
-  
   .container {
     position: absolute;
     width: 100%;
