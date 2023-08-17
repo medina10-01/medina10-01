@@ -172,9 +172,13 @@
     width: 100%;
 }
 .writeHere{
+    border: none;
     width: 99%;
     height: 50px;
     border-radius: 0px 0px 13px 13px;
+}
+.writeHere:focus{
+    outline: none;
 }
 .chat-ana-empty {
     width: 470px;
@@ -199,6 +203,12 @@
         opacity: 0; /* Final de la animación: totalmente oculto */
     }
 }
+
+
+
+
+
+
 
 
 @media only screen and (min-width: 1021px){

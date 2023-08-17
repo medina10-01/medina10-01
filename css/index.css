@@ -3,22 +3,57 @@
   padding: 0;
   box-sizing: border-box;
 }
-.main-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
- }
-
+  body {
+    background-color: #000000;
+    background-image: url('../img/fondoCreper.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .about-me{
+    grid-area: about-me;
+  }
+  .title-me{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 8vh;
+  }
+.fa-face-laugh-beam{
+  color: rgb(255, 255, 255);
+  font-size: 6vh;
+}
+.text-about-me{
+  display: grid;
+  grid-template: 
+                  'empty-left     empty-head      empty-head'140px
+                  'empty-left     hello-hand      gret'100px
+                  'empty-left     info-me         info-me'/
+                  50px             1fr;
+}
+.img-hand-hello{
+  grid-area: hello-hand;
+}
+.div-greet{
+  grid-area: gret;
+  color: white;
+  font-size: 6vh;
+}
+ .hand-hello{
+  width: 40px;
+}
+.info-me{
+  grid-area: info-me;
+  color: white;
+  font-size: 5vh;
+}
 @media only screen and (min-width: 1051px) {
+
   .container {
     position: absolute;
     width: 100%;
     display: grid;
     grid-template:
-                  'empty-l    text      foto         empty-r'100vh/
+                  'empty-l    text      foto         empty-r'100vh
+                  'empty-l    about-me  about-me     about-me'300px/
                   100px       1fr       0.5fr        100px;
   }
   .info {
@@ -83,8 +118,8 @@
   
   .auto-type {
     color: #ffffff; /* Naranja brillante */
-    font-size: 3vh;
-    border-bottom: 6px double #ffffff;
+    font-size: 2.4vh;
+    height: 300px;
   }
   
   .items{
