@@ -3,93 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Center pag</title>
-    <link rel="stylesheet" href="icons/all.css">
-    <link rel="stylesheet" href="css/homeCenterCss.css">
+    <title>Homecenter</title>
+    <script src="https://kit.fontawesome.com/8d35a45d51.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/homecenter.css">
 </head>
 <body>
-    <div id="idContainer" class="container">
-        <div class="bars ">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <div class="house">
-            <img src="img/Logo_header_mobile.webp" alt="mobile" class="imgHome">
-            <img src="img/home.webp" alt="homr" class="img-remove">
-        </div>
-        <div id="idGlass" class="glass">
-            <input type="text" placeholder="¿que estas buscando?" class="find-text remove">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-        <div class="locat img-remove">
-            <i class="fa-solid fa-location-dot"></i>Estás buscando para<br> <span class="locate">Pitalito</span>
-        </div>
-        <div class="car-shop">
-            <i class="fa-solid fa-cart-plus"></i>
-        </div>
-        <div class="cmrPoints remove">
-            <img src="img/logo-cmr-puntos.svg" alt="cmrPoints" class="cmr-img">
-            <p class="cmr-txt">programa <br> CMR puntos</p>
-        </div>
-        <div class="user">
-            <i class="fa-regular fa-user"></i>
-        </div>
-        <div id="chatAna" class="none-bot">
-            <div class="chat-head">
-                <div class="img-chat-head">
-                    <img src="img/anaChatBot.webp" alt="ana" class="ana-chat-head">
-                </div>
-                <div class="head-text">
-                    <p>HOMECENTER</p>
-                </div>
+    <div class="container">
+        <div class="barra">
+            <div class="box "></div>
+            <div class="box logo"><img class="logo-hc" src="img/homecenter/logo.webp" ></div>
+            <div class="box seeker">
+                <div class="busca"><input type="text" placeholder="¿Qué estás buscando?"></div>
+                <div class="lupa"><i class="fa-solid fa-magnifying-glass"></i></div>
             </div>
-            <div class="chat-body">
-                <div class="img-chat-body">
-                    <img src="img/anaChatBot.webp" alt="Hola-Ana" class="ana-chat-body">
-                </div>
-                <div class="div-text1">
-                        <p class="textN1">Dime, ¿qué quieres hacer? <br>Selecciona una opción 👇</p> <br>    
-                        <p class="textN2"> <b>Para ver mas opciones desliza a la derecha </b>➡️</p>
-                </div>
-                <div class="div-text2">
-                    <div class="textN2-1">
-                        Compre con un experto
-                    </div>
-                    <div class="textN2-2">
-                        <i class="fa-solid fa-cart-flatbed"></i>
-                        Compra aquí tus productos o servicios y alquila tus herramientas con un experto
-                    </div>
-                    <div class="text2-toGo">
-                        click aquí
-                    </div>
-                </div>
-                <div class="text-imput">
-                    <input class="writeHere" type="text" placeholder="Escribe aquí...">
-                </div>
+            <div class="box ubicacion"><p class="location"><i class="fa-solid fa-location-dot"></i></p>&nbsp;<p class="para">Estás comprando para<br><span class="city">Bogota DC</span></p></div>
+            <div class="box shop" ><div class="compra">0</div><p class="cart"><i class="fa-solid fa-cart-shopping"></i></p></div>
+            <div class="box cmr"><img src="img/homecenter/logo-cmr-puntos.svg" width="28">&nbsp;<p class="para2">Programa<br><span class="puntos">CMR Puntos</span></p></div>
+            <div class="box"><i class="fa-regular fa-user"></i>&nbsp;Mi cuenta</div>
+        </div>
+        <div class="horizontal-menu">
+            <div class="container-menu-hori">
+                <ul class="ul-menu-hori">
+                    <li><a href="#">CONSTRUCCIÓN Y<br> FERRETERÍA</a></li>
+                    <li><a href="#">PISOS, PINTURAS Y TERMINACIONES</a></li>
+                    <li><a href="#">HERRAMIENTAS<br> Y MAQUINARIAS</a></li>
+                    <li><a href="#">BAÑO,<br> COCINA Y ASEO</a></li>
+                    <li><a href="#">ELECTROHOGAR, TECNOLOGÍA Y<br> CLIMATIZACIÓN</a></li>
+                    <li><a href="#">MUEBLES Y<br> ORGANIZACIÓN</a></li>
+                    <li><a href="#">DECORACIÓN, MENAJE E ILUMINACIÓN</a></li>
+                    <li><a href="#">AIRE LIBRE, JARDÍN<br> Y MASCOTAS</a></li>
+                    <li><a href="#">AUTOMÓVILES Y<br> CARCENTER</a></li>
+                    <li><a href="#">SERVICIOS Y<br> PROYECTOS</a></li>
+                    <li><a href="#">PROYECTOS E<br> INSPIRACIÓN</a></li>
+                </ul>
             </div>
         </div>
 
-        <div id="botAna" class="bot-ana">
-                <div id="anaLook" class="ana-look">
-                    <img src="img/anaChatBot.webp" alt="anaChatBot"class="bot-img">
-                    <p class="ana-help">Ana</p>
+    <div class="form-ana" id="formAna">
+        <div class="form-container">
+            <div class="form-header">
+                <img class="img-ana-I" src="img/homecenter/anaheader.PNG" alt="">
+                <div class="title-form">Homecenter</div>
+            </div>
+            <div class="form-body">
+                <div class="form-text">
+                    <img class="img-ana-II" src="img/homecenter/anaheader.PNG" alt="">
+                    <div class="text-opciones">Dime, ¿que quieres hacer?<br>Selecciona una opción👇
+                        <span class="finger-style icon-pointer"></span><br>
+                        <span class="text-form-black">Para ver mas opciones desliza<br> a la derecha➡️</span>
+                        <span class="reloj-msj">10:05 a.m.</span>
+                    </div>
                 </div>
-                <div id="botAnaCircle" class="none-bot">
-                    <i class="fa-solid fa-xmark"></i>
+                <div class="icons-slider">
+                    <div class="box-icon-arrow-left">
+                        <div id="iconArrowLeft" class="icon-arrow-left"><i class="fa-solid fa-chevron-left"></i></div>
+                    </div>
+                    <div class="box-main-slider">
+                        <div id="idSlider" class="slider slider-view-1">
+                            <div class="box-slider slider1"><span class="slider-title">Compra con un experto</span>
+                                <span class="slider-text">Compra aquí tus productos o servicios y alquila<br>
+                                tus herramientas con un experto</span>
+                                <span class="click-slider">Click aquí</span> 
+                            </div>
+                            <div class="box-slider slider2"><span class="slider-title">Rastrea tu pedido</span>
+                                <span class="slider-text">Rastrea tus pedidos de homecenter</span>
+                                <span class="click-slider">Click aquí</span> 
+                            </div>
+                            <div class="box-slider slider3"><span class="slider-title">Agenda tu Instalacion</span>
+                                <span class="slider-text">Agenda tu servicio de instalacion o armado</span>
+                                <span class="click-slider">Click aquí</span></div>
+                            <div class="box-slider slider4"><span class="slider-title">Ayuda y mas Opciones</span>
+                                <span class="slider-text">Ana puede ayudarte con otras solicitudes</span>
+                                <span class="click-slider">Click aquí</span></div>
+                        </div>
+                    </div>
+                    <div class="box-icon-arrow-right">
+                        <div id="iconArrowRight" class="icon-arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
                 </div>
-        </div> 
+                <div class="num-slider">
+                    <div class=""></div>
+                </div>
+            </div>
+            <div class="form-btn">
+                <div id="boxBtn1" class="box-btn btn-select"></div>
+                <div id="boxBtn2" class="box-btn"></div>
+                <div id="boxBtn3" class="box-btn"></div>
+                <div id="boxBtn4" class="box-btn"></div>
+            </div>
+            <div class="form-input">
+                <input class="input-text" type="text" name="" id="" placeholder="Escribe aquí" autofocus>
+                <span class="icon-smile"><i class="fa-regular fa-face-smile-beam"></i></span>
+            </div>
+        </div>
+        </div>
+        <div class="form-exit">
+            <img src="img/homecenter/avatar-ana.png" alt="" width="120px" id="avatarAna">
+            <span class="exit-style" id="exitStyle"><i class="exit-icon-style fa-solid fa-xmark"></i></span>
+        </div>
         
+
+
+
+    
+    <div class="container-mobile">
+        <div id="containerMobile" class="mobile-menu">
+            <div class="first-mobile"></div>
+            <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+            <div class="logo-mobile"><img src="img/homecenter/Logo_header_mobile.webp" alt=""></div>
+            <div class="lupa"><i class="fa-solid fa-magnifying-glass" id="lupa"></i></div>
+            <div class="box shop"><div class="compra">0</div><p class="cart"><i class="fa-solid fa-cart-shopping"></i></p></div>
+            <div class="box user"><i class="fa-regular fa-user"></i>&nbsp;</div>
+        </div>
     </div>
-    <div id="idFind" class="none">
-        <div class="glass2">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-        <div class="space-text">
-            <input type="text" placeholder="¿que estas buscando?" class="find-text">
-        </div>
-        <div id="idExit" class="exit">
-            <i class="fa-solid fa-xmark"></i>
-        </div>
+    <div class="div-search">
+        <div class="search" id="search">
+            <div class="lupa-hidden"><i class="fa-solid fa-magnifying-glass" id="lupa"></i></div>
+            <input type="text" class="busca" placeholder="¿Que estas pensando?">
+            <div class="x-hidden" id="xHidden"><i class="fa-solid fa-xmark"></i></div>
+        </div>  
     </div>
+    
+    <script src="js/homecenter.js"></script>
 </body>
-<script src="js/menuHome.js"></script>
 </html>
