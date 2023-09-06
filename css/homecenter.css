@@ -7,8 +7,8 @@
     width: 100vw;
     display: grid;
     grid-template:
-        "empty-1    logo    buscador    ubicacion   carrito   cmr   cuenta empty" 10vh /
-        1fr          12vw      30vw      10vw       6vw    5vw      5vw    1fr ;
+        "empty-1        logo        buscador    ubicacion   carrito     cmr         cuenta  empty" 10vh /
+        1fr             12vw        30vw        10vw        6vw         5vw         5vw     1fr ;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -610,4 +610,78 @@ input[type="text"]:focus {
     margin: 7px;
     font-size: 1.4em;
 }
-
+.barra-info{
+    display: grid;
+    grid-template: "empty-l     telefono        cliente         tienda          precios         mundo           empty-center            constructor         falabella       banco       seguros         seguimiento     empty-r"/
+                    1.1fr         195px           175px         55px            135px           85px            1fr                     90px                70px            45px        60px            150px           1.1fr;                 
+}
+.tel, .client, .tienda, .precios, .mundoCmr, .cons, .falla, .banco, .seguros, .segCompra{
+    font-size: 12px;
+    border-left: 1px solid rgba(51, 51, 51, 0.699);
+    padding-left: 5px;
+    cursor: pointer;
+}
+.tel, .cons{
+    border: none;
+}
+.tel{
+    grid-area: telefono;
+}
+.client{
+    grid-area: cliente;
+}
+.tienda{
+    grid-area: tienda;
+}
+.precios{
+    grid-area: precios;
+}
+.mundoCmr{
+    grid-area: mundo;
+}
+.cons{
+    grid-area: constructor ;
+}
+.falla{
+    grid-area: falabella;
+}
+.banco{
+    grid-area: banco;
+}
+.seguros{
+    grid-area: seguros;
+}
+.segCompra{
+    grid-area: seguimiento;
+}
+.bono{
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+}
+.imgCampana{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottons{
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    position: relative;
+    font-size: 8vh;
+    bottom: 300px;
+}
+.fa-circle-chevron-right, .fa-circle-chevron-left{
+    border-radius: 100px;
+    background-color: #000;
+    cursor: pointer;
+}
+.fa-circle-chevron-right{
+    position: absolute;
+    right: 1px;
+}
+.fa-circle-chevron-left{
+    position: absolute;
+    left: 1px;
+}
