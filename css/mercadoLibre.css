@@ -1,0 +1,61 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    background-color: yellow;
+    display: grid;
+    grid-template:  'empty-h    empty-h       empty-h'15px
+                    'logo        buscar       icons'50px
+                    'empty-b    empty-b       empty-b'15px/
+                    100px        1fr           120px;
+}
+.input-buscar{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: logo;
+}
+.buscar{
+    font-size: 30px;
+    background-color: rgb(255, 255, 255);
+    grid-area: buscar;
+    border: 0.2px solid;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: icons;
+}
+.logoMercado{
+    width: 70px;
+}
+.size-text-4{
+    font-size: 40px;
+    font-weight: 100;
+}
+.box-auto{
+
+    width: 100vw;
+    height: 100px;
+    display: grid;
+    grid-template: 'box-img box-info' 150px/
+                    1fr     2fr;
+}
+.box-img{
+    grid-area: box-img;
+}
+.box-info{
+    grid-area: box-info;
+}

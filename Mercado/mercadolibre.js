@@ -91,7 +91,7 @@ window.addEventListener("load", function() {
     }
 
     inputBusqueda.addEventListener("keyup", function(event) {
-        if (event.key === "Enter" && !automovilesMostrados) {
+        if (event.key === "Enter" && inputBusqueda.value.toLowerCase() == "toyota" && !automovilesMostrados) {
             mostrarAutomovil(auto1, auto1.imagenURL);
             mostrarAutomovil(auto2, auto2.imagenURL);
             automovilesMostrados = true;
