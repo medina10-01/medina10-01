@@ -7,8 +7,8 @@
     width: 100vw;
     display: grid;
     grid-template:
-        "empty-1        logo        buscador    ubicacion   carrito     cmr         cuenta  empty" 10vh /
-        1fr             12vw        30vw        10vw        6vw         5vw         5vw     1fr ;
+        "empty-1    logo    buscador    ubicacion   carrito   cmr   cuenta empty" 10vh /
+        1fr          12vw      30vw      10vw       6vw    5vw      5vw    1fr ;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -215,15 +215,15 @@ input[type="text"]:focus {
     position: fixed;
     right: 20px;
     height: 100vh;
+    top: 25vh;
     width: 406px;
     display: grid;
     grid-template: "frm-header" 70px
-                   "frm-body" minmax(150px, 50vh)
+                   "frm-body"  minmax(150px, 50vh)
                    "frm-btn" 30px
                    "frm-input" 60px
-                   "frm-exit" 80px /
-                   406px;
-                   grid-gap: 10px;
+                   "frm-exit" 80px/
+                    406px;     
 }
 .form-header {
     grid-area: frm-header;
@@ -252,7 +252,6 @@ input[type="text"]:focus {
     grid-area: frm-body;
     background-color: rgb(234,238,243);
     display: grid;
-    grid-gap: 10px;
     grid-template: "empty-left      form-text       empty-right"
                    "icons-slider    icons-slider    icons-slider" 125px /
                     50px            1fr              40px;
@@ -282,6 +281,11 @@ input[type="text"]:focus {
     margin-top: 30px;
     letter-spacing: 0.08em;
 }
+/* .box-right-arrow {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+} */
 .img-right-arrow {
     width: 20px;
     height: 20px;
@@ -359,6 +363,7 @@ input[type="text"]:focus {
     font-weight: 900;
 }
 .slider {
+/*     background-color: red;  */
     grid-area: slider;
     font-size: .9em;
     height: 123px;
@@ -396,6 +401,20 @@ input[type="text"]:focus {
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     margin-right: 20px;
 }
+.slider1 {
+    position: relative;
+   /*  right: 300px; */
+}
+.slider2 {
+    position: relative;
+    background-color: yellow;
+}
+.slider3 {
+    background-color: aqua;
+}
+.slider4 {
+    background-color: violet;
+}
 .slider-title {
     font-weight: 900;
     font-size: 1em;
@@ -419,10 +438,6 @@ input[type="text"]:focus {
     font-weight: 400;
     margin-top: 10px;
 }
-.click-slider:hover{
-    cursor: pointer;
-    opacity: .6;
-}
 .form-btn {
     grid-area: frm-btn;
     background-color: #EAEEF3;
@@ -430,7 +445,6 @@ input[type="text"]:focus {
     flex-direction: row;
     justify-content: center;
     padding-top: 5px;
-    padding: 10px;
 }
 .box-btn {
     width: 4px;
@@ -486,7 +500,6 @@ input[type="text"]:focus {
     
 }
 .form-exit {
-    cursor: pointer;
     grid-area: frm-exit;
     display: flex;
     position: fixed;
@@ -496,19 +509,70 @@ input[type="text"]:focus {
 .icon-arrow-left{
     display: none;
 }
-#avatarAna{
+/* .container-chat{
+    position: fixed;
+    right: 0;
+    margin-right: 30px;
+    margin-bottom: 17.5px;
+    bottom: 0;
+    width: 99px;
+    height: 64px;
+    top: 89vh;
+    left: 79vw;
+    width: 18vw;
+    height: 12%;
+}
+.container-message{
+    width: 70%;
+    height: 40%;
     display: flex;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
-    display: none;
 }
-.form-container {
+.message{
+    font-size: .8rem;
+    background-color: rgb(255, 255, 255);
+    padding: 12px;
+    border: 1px solid rgb(225, 225, 225);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.container-ana{
+    cursor: pointer;
+    background-color: bisque;
+    width: 30%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background-color: rgb(10, 111, 213);
+    color: white;
+}
+.container-ana:hover{
+    opacity: .8;
+}
+.x-anna{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.9vw;
+    padding: 10px;
+    color: #f5f5f5;
+    border-radius: 100px;
+    height: 4vh;
+    background-color:rgb(10, 111, 213);
     position: fixed;
-    bottom: 70px;
+    top: 91vh;
+    left: 93vw;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
-
+.x-anna:hover{
+    transition: 1s;
+    background-color: #f5f5f5;
+    color:rgb(10, 111, 213);
+} */
 .container-x-anna{
     display: none;
 }
@@ -610,78 +674,4 @@ input[type="text"]:focus {
     margin: 7px;
     font-size: 1.4em;
 }
-.barra-info{
-    display: grid;
-    grid-template: "empty-l     telefono        cliente         tienda          precios         mundo           empty-center            constructor         falabella       banco       seguros         seguimiento     empty-r"/
-                    1.1fr         195px           175px         55px            135px           85px            1fr                     90px                70px            45px        60px            150px           1.1fr;                 
-}
-.tel, .client, .tienda, .precios, .mundoCmr, .cons, .falla, .banco, .seguros, .segCompra{
-    font-size: 12px;
-    border-left: 1px solid rgba(51, 51, 51, 0.699);
-    padding-left: 5px;
-    cursor: pointer;
-}
-.tel, .cons{
-    border: none;
-}
-.tel{
-    grid-area: telefono;
-}
-.client{
-    grid-area: cliente;
-}
-.tienda{
-    grid-area: tienda;
-}
-.precios{
-    grid-area: precios;
-}
-.mundoCmr{
-    grid-area: mundo;
-}
-.cons{
-    grid-area: constructor ;
-}
-.falla{
-    grid-area: falabella;
-}
-.banco{
-    grid-area: banco;
-}
-.seguros{
-    grid-area: seguros;
-}
-.segCompra{
-    grid-area: seguimiento;
-}
-.bono{
-    width: 100%;
-    height: 60px;
-    background-color: #000;
-}
-.imgCampana{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.bottons{
-    display: flex;
-    justify-content: center;
-    color: rgb(255, 255, 255);
-    position: relative;
-    font-size: 8vh;
-    bottom: 300px;
-}
-.fa-circle-chevron-right, .fa-circle-chevron-left{
-    border-radius: 100px;
-    background-color: #000;
-    cursor: pointer;
-}
-.fa-circle-chevron-right{
-    position: absolute;
-    right: 1px;
-}
-.fa-circle-chevron-left{
-    position: absolute;
-    left: 1px;
-}
+

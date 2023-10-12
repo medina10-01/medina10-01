@@ -14,34 +14,17 @@ let boxBtn4 = document.getElementById("boxBtn4");
 
 let exitStyle = document.getElementById("exitStyle");
 let formAna = document.getElementById("formAna");
-let avatarAna = document.getElementById("avatarAna");
 
-let isFormVisible = true;
 
 exitStyle.addEventListener("click", function () {
-    if (isFormVisible) {
+    if (formAna.classList.contains("form-ana")) {
         formAna.style.display = "none";
-        avatarAna.style.display = "flex";
-        isFormVisible = false;
+        formAna.classList.remove("form-ana");
     } else {
         formAna.style.display = "grid";
-        avatarAna.style.display = "none";
-        isFormVisible = true;
+        formAna.classList.add("form-ana");
     }
 });
-
-avatarAna.addEventListener("click", function () {
-    if (isFormVisible) {
-        formAna.style.display = "none";
-        avatarAna.style.display = "flex";
-        isFormVisible = false;
-    } else {
-        formAna.style.display = "grid";
-        avatarAna.style.display = "none";
-        isFormVisible = true;
-    }
-});
-
 
 
 
